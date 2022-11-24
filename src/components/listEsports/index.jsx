@@ -19,7 +19,7 @@ const ListEsports = ({esports, open}) => {
                 </div>
                 <div >
                    <img src={ArenaWorldCupr} alt="arena-world-cup" />
-                   <p>Xampeonato Muncial de Arena  WoW</p>
+                   <p>Campeonato Muncial de Arena WoW</p>
                 </div>
                 <div >
                    <img src={StarCraft} alt="star-craft" />

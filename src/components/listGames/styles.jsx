@@ -1,16 +1,19 @@
 import styled from 'styled-components'
 
 export const contentGames = styled.div`
-    background: rgb(2,2,3);
-    background: linear-gradient(0deg, rgba(2,2,3,1) 0%, rgba(14,17,23,1) 90%, rgba(14,17,23,1) 100%);
-    transition: all 2s;
-
+  position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(2, 2 , 3, 0.99) 0%, rgba(14, 17, 23, 0.99) 90%, rgba(14, 17, 23, 0.9) 100%);
+  
     ul{
-        padding: 10% 5%;
+        padding: 10% 9%;
         display: flex;
         justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 20px;
       
     }
     div{
@@ -23,11 +26,26 @@ export const contentGames = styled.div`
 export const Cards = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 5px;  
+    align-items: center;
+    gap: 10px;
+    width: 150px;
     text-align: center;
-    padding: 40px 20px;
+    padding: 35px 30px;
     border-radius: 10px;
     cursor: pointer;
+
+    img{
+        width: 95px;
+        height:65px;
+    }
+
+    p{
+        color: #9D9D9D;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        transform: none;
+        font-weight: 500;
+    }
 
     &:hover{
         background-color:  ${({ theme }) => theme.colors.black};
@@ -36,16 +54,10 @@ export const Cards = styled.div`
    
     &:hover{
         img{
-            transform: scale(1.05);
+            transform: scale(1.2);
         }
     }
-    p{
-        color: #9D9D9D;
-        font-family: 'Poppins', sans-serif;
-        font-size: 14px;
-        transform: none;
-    }
-    
+   
 `
 
 export const menuContent = styled.div`

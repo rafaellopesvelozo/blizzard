@@ -55,6 +55,7 @@ export const Links = styled.div`
     cursor: pointer;
     color: ${({ theme }) => theme.colors.white};
     font-family: Poppins;
+    font-weight: 500;
     
     &:hover {
       color: ${({ theme }) => theme.colors.darkGreywhite};

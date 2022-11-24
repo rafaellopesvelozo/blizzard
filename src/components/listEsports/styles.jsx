@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, #020203 0%, rgba(14, 17, 23, 0.92) 100%);
-    backdrop-filter: blur(6px);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg,rgba(14, 17, 23, 0.99)  0%, rgba(2, 2, 3, 0.99) 100%);
 
     ul{
-        padding: 13% 5% 10% 5%;
+        padding: 12% 9%;
         display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
         gap: 20px;
    }
 
@@ -17,28 +20,34 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        gap: 30px;
+        width: 174px;
+        text-align: center;
 
         &:hover{
             p{
                 color: ${({ theme }) => theme.colors.white};
-            }  
-            &:hover{
-                img{
-                    transform: scale(1.05);
-                }
-            }     
+            } 
+
+          
+            img{
+                transform: scale(1.2);
+            }
+                 
         }
 
         img{
-            width: 190px;
-            height: 150px;
+            width: 120px;
+            height: 105px;
             cursor: pointer;
         }
 
         p{
-            color: #9D9D9D; 
-
+            font-size: 14px;
+            font-weight: 500;
+            color: #9D9D9D;
+            width: 105px;
+            font-family: 'Poppins', sans-serif;
         }
     }
 `
