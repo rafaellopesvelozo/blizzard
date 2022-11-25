@@ -3,6 +3,7 @@ import logo from "../../assets/logo-blizzard.png"
 import ListGames from '../../components/listGames';
 import { useState } from 'react';
 import ListEsports from '../../components/listEsports';
+import User from '../../assets/icons/user.png'
 
 
 const Menu = () => {
@@ -34,11 +35,10 @@ const Menu = () => {
                             <li onClick={handleGames} >Jogos</li>
                             <li onClick={handleEsports}>Esportes</li>
                             <li>Loja</li>
-                            <li>Notícia</li>
+                            <li>Notícias</li>
                             <li>Suporte</li>
                         </ul>
                     </styled.Links>
-
                 </styled.ContainerNav>
 
                 <styled.Login>
@@ -46,7 +46,10 @@ const Menu = () => {
                         <button>Criar conta</button>
                     </styled.crateAccount>
                     <styled.Enter>
-                        <button>Logar</button>
+                        <button>
+                            <img src={User} alt="user" />
+                            Logar
+                        </button>
                     </styled.Enter>
                     <div>
 
@@ -59,13 +62,10 @@ const Menu = () => {
             <div>
                 <ListGames game={gamesVisible ? true : false} />
             </div>
-
             <div>
                 <ListEsports esports={esportsVisible ? true : false} />
             </div>
         </styled.Content>
-
-
     );
 }
 export default Menu;

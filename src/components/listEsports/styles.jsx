@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     position: absolute;
+    z-index: 98;
     width: 100%;
     top: 0;
     left: 0;
@@ -29,11 +30,9 @@ export const Container = styled.div`
                 color: ${({ theme }) => theme.colors.white};
             } 
 
-          
             img{
                 transform: scale(1.2);
             }
-                 
         }
 
         img{
@@ -49,5 +48,15 @@ export const Container = styled.div`
             width: 105px;
             font-family: 'Poppins', sans-serif;
         }
+    }
+    
+    .tournament{
+        margin: 0 auto;
+        color: white;
+        padding: 20px 0;
+        width: 100%;
+        gap: 25px;
+        background: #15171B;
+  
     }
 `

@@ -34,6 +34,9 @@ const ListEsports = ({esports, open}) => {
                    <p>Liga de Overwatch</p>
                 </div>
             </ul>
+            <div className='tournament'>
+                sdsadsadsa
+            </div>
         </styled.Container>
 
     );

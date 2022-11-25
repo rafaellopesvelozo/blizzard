@@ -58,7 +58,6 @@ const ListGames = ({ game, esports }) => {
                     <p>Forum dos jogos</p>
                 </div>
             </styled.menuContent >
-
         </styled.contentGames>
     );
 }

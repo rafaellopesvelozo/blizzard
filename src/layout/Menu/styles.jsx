@@ -11,44 +11,46 @@ export const Content = styled.div`
 
 export const Header = styled.div`
   position: absolute;
-  background: grey;
-  padding: 20px 5%;
+  padding:0 7.8%;
   width: 100%;
-  height: 80px;
+  height: 86px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 999;
+  z-index: 99;
 
   &:after {
     content: "";
     position: absolute;
     bottom: -2px;
-    left: 5%;
+    left: 7.8%;
     background-color: ${({ theme }) => theme.colors.blue};
-    width: 43px;
-    height: 3px;
+    width: 40px;
+    height: 1.5px;
   }
 `;
 
 export const ContainerNav = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 70px;
+  gap: 110px;
   align-items: center;
-  img {
-    background-color: red;
-  }
+  
   div {
     display: flex;
     align-items: center;
+
+    img{
+      width: 80px;
+      height: 35px;
+    }
   }
 `;
 
 export const Links = styled.div`
   ul {
     display: flex;
-    gap: 20px;
+    gap: 50px;
   }
   li {
     font-size: 14px;
@@ -75,26 +77,46 @@ export const crateAccount = styled.div`
   button {
     padding: 10px 25px;
     background-color: transparent;
-    border: none;
     outline: none;
-    border-radius: 6px;
+    border: 1px solid ${({ theme }) => theme.colors.white};
+    border-radius: 3px;
+    font-size: 14px;
     color: ${({ theme }) => theme.colors.white};
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
+    
+
+    &:hover{
+      background-color: #FFFFFF;
+      color: #000000;
+      transition: all 2s ease-out;
+    }
   }
 `;
 
 export const Enter = styled.div`
+  img{
+    margin-right: 6px;
+  }
   button {
+    display: flex;
+    align-items: center;
     padding: 10px 25px;
     background-color: ${({ theme }) => theme.colors.blue};
-    border: none;
+    border: 1px solid transparent;
     outline: none;
-    border-radius: 6px;
+    border-radius: 3px;
     color: ${({ theme }) => theme.colors.white};
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
+    font-size: 14px;
+   
+
+    &:hover{
+      background-color: #009be2; 
+      transition: all 2s ease-out; 
+    }
   }
 `;
