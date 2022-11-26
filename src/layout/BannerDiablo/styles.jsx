@@ -1,17 +1,61 @@
 import styled from "styled-components";
-import IconDiablo from '../../assets/banners/diablo-bg.png'
+import bgDiablo from '../../assets/banners/diablo-bg.png'
+
+export const C = styled.div`
+  
+  .x{
+      //mix-blend-mode: normal;
+      //mix-blend-mode: normal;
+      //mix-blend-mode: inherit;
+    }
+
+    .g{
+      //mix-blend-mode: normal;
+      //mix-blend-mode: luminosity;
+      //mix-blend-mode: inherit;
+    }
+
+    .banner-logo{ 
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        top: 32.2%;
+        left: 7.8%;
+        gap: 17px;
+        z-index: 105;
+        width: 45px;
+    
+
+        img{
+            width: 45px;
+            height: 45px;
+            cursor: pointer;   
+            
+    
+        }      
+    }
+   
+`
 
 export const ContainerBanner = styled.div`
+
+    .transition{
+      visibility: hidden;
+      opacity: 0;
+    }
+   
     .banner-content{
         position: relative;
         display: flex;
         justify-content: space-between;
-        background-image: url('${IconDiablo}');
+        background-image: url('${bgDiablo}');
         background-position-y:-20px;
         background-repeat: no-repeat;
+        background-position: inherit;
         background-size: 104%;
         height: 670px;
-        
+
+
         &:after {
             content: "";
             background: radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);
@@ -25,41 +69,21 @@ export const ContainerBanner = styled.div`
             right: 0;
             bottom: 0;
         }
+       
     }
    
-    .banner-logo{ 
-        display:flex;
-        flex-direction: column;
-        position: absolute;
-        top: 32.2%;
-        left: 7.8%;
-        gap: 17px;
-        z-index: 97;
-         
-        img{
-            width: 45px;
-            height: 45px;
-            cursor: pointer;       
-        }  
-      
-        .logo-disabled{
-            mix-blend-mode: luminosity;
-            display: flex;
-            flex-direction: column;
-            gap: 17px;
-          
-        }
-    }
  
     .info-banner{
         position: absolute;
+        z-index: 99;
         height: 100%;
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        z-index: 96;
         display: flex;
-        padding: 0 7.8% 0 22.4%;  
+        padding: 0 7.8% 0 22.4%; 
+      
+
     }
 
     .title p{
@@ -77,7 +101,6 @@ export const ContainerBanner = styled.div`
         width: 562px;
         line-height: 75px;
         padding-bottom: 15px;
-        //padding-top: 14.15%;
     }
     .banner-btn button {
         padding: 14px 32px;
@@ -126,7 +149,7 @@ export const ContainerBanner = styled.div`
     .img-preview{
         position: absolute;
         top: 0;
-        transition: all .7s;
+        transition: all 1s;
 
         img{
             width: 100%;

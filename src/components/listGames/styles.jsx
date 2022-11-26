@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const contentGames = styled.div`
     position: absolute;
-    z-index: 98;
+    z-index: 998;
     width: 100%;
 
     top: 0;
@@ -45,6 +45,7 @@ export const Cards = styled.div`
     img{
         width: 95px;
         height:65px;
+        
         &:hover{
             transform: scale(1.2); 
         }

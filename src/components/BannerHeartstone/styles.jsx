@@ -32,11 +32,11 @@ export const ContainerBanner = styled.div`
     
     .info-banner{
         position: absolute;
+        z-index: 99;
         height: 100%;
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        z-index: 96;
         display: flex;
         padding: 0 7.8% 0 22.4%;  
     }
@@ -105,7 +105,7 @@ export const ContainerBanner = styled.div`
     .img-preview{
         position: absolute;
         top: 0;
-        transition: all .7s;
+        transition: all 1s;
 
         img{
             width: 100%;

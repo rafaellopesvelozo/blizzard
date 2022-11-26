@@ -4,15 +4,18 @@ import IconWWC from '../../assets/banners/world-warcraft-icon.png'
 import GifWWC from '../../assets/banners/world-warcraft.gif'
 import PreviewWWC from '../../assets/banners/worldwarcraft-preview.png'
 
-const BannerWorldWarCraft = () => {
+const BannerWorldWarCraft = ({visibleWWc}) => {
+    if(!visibleWWc){
+        return null
+    }
     return (
         <styled.ContainerBanner>
             <div className='banner-content'>
                 <div className='info-banner'>
                     <div className='banner-title'>
                         <div className='title'>
-                            <h1>Desnrabe as terras sombrias em Shadowlands!</h1>
-                            <p>O que jaz alpem do mundo que você conhece</p>
+                            <h1>Desbrabe as terras sombrias em Shadowlands!</h1>
+                            <p>O que jaz além do mundo que você conhece?</p>
                         </div>
                         <div className='banner-btn'>
                             <button>Reserve agora na pré-venda</button>

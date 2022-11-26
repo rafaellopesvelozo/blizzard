@@ -2,6 +2,7 @@ import styled from "styled-components";
 import BgWWC from '../../assets/banners/world-warcraft-bg.jpg'
 
 export const ContainerBanner = styled.div` 
+
     .banner-content{
         position: relative;
         display: flex;
@@ -12,6 +13,7 @@ export const ContainerBanner = styled.div`
         background-size: 104%;
         height: 670px;
         
+ 
         &:after {
             content: "";
             background: radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);
@@ -48,7 +50,7 @@ export const ContainerBanner = styled.div`
         font-weight: 400;
     }
     .title h1{
-        font-size: 64px;
+        font-size: 55px;
         font-family: 'Poppins';
         color: ${({ theme }) => theme.colors.white};
         font-weight: 700;
@@ -104,8 +106,7 @@ export const ContainerBanner = styled.div`
     .img-preview{
         position: absolute;
         top: 0;
-        transition: all .7s;
-
+        transition: all 1s;
         img{
             width: 100%;
         }

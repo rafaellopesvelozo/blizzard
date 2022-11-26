@@ -7,9 +7,9 @@ import Menu from "../../assets/icons/menu.png"
 import Download from "../../assets/icons/download.png"
 import Spinner from "../../assets/icons/spinner.png"
 
-const ListGames = ({ game, esports }) => {
+const ListGames = ({ game }) => {
     const [listGames, setListGames] = useState([])
-
+    
     useEffect(() => {
         api.get('api/blizzard/games').then(({ data }) => {
             setListGames(data)

@@ -3,12 +3,14 @@ import IconHeartstone from '../../assets/banners/heartstone-icon.png'
 import Gifheartstone from '../../assets/banners/heartstone-gif.gif'
 import HeartstonePreview from '../../assets/banners/heartstone-preview.png'
 
-const BannerHeartStone = () => {
+const BannerHeartStone = ({visibleHeartStone}) => {
+    if(!visibleHeartStone){
+        return null
+    }
 
     return (
         <styled.ContainerBanner>
             <div className='banner-content'>
-               
                 <div className='info-banner'>
                     <div className='banner-title'>
                         <div className='title'>

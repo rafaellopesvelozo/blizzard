@@ -5,7 +5,6 @@ import { useState } from 'react';
 import ListEsports from '../../components/listEsports';
 import User from '../../assets/icons/user.png'
 
-
 const Menu = () => {
     const [gamesVisible, setGamesVisible] = useState(false)
     const [esportsVisible, setEsportsVisible] = useState(false)

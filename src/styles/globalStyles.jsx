@@ -10,8 +10,8 @@ export const GlobalStyles = createGlobalStyle`
         font-family: sans-serif;
     }
 
-    body,#root,html{
-       width: 100%;
+    body,#root{
+
        max-width: 1920px;
        height: 100vh;
     }

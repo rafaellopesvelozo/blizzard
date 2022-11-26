@@ -6,7 +6,7 @@ import OverWatchLeague from '../../assets/esports/Overwatch-League.png'
 import ArenaWorldCupr from '../../assets/esports/awc.png'
 import StarCraft from '../../assets/esports/star-craft.png'
 
-const ListEsports = ({esports, open}) => {
+const ListEsports = ({esports}) => {
     if(!esports){
         return null
     }
