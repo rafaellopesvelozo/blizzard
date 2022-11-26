@@ -9,7 +9,7 @@ import Spinner from "../../assets/icons/spinner.png"
 
 const ListGames = ({ game }) => {
     const [listGames, setListGames] = useState([])
-    
+
     useEffect(() => {
         api.get('api/blizzard/games').then(({ data }) => {
             setListGames(data)

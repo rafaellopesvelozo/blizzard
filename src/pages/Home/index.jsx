@@ -1,6 +1,6 @@
 import BannerDiablo from "../../layout/BannerDiablo";
 import Footer from "../../layout/Footer";
-import ExclusiveGames from "../../layout/JogosExclusivos";
+import Exclusive from "../../layout/ExclusiveGames";
 import Menu from "../../layout/Menu";
 
 function Home() {
@@ -8,7 +8,7 @@ function Home() {
     <div>
       <Menu/>
       <BannerDiablo/>
-      <ExclusiveGames />
+      <Exclusive />
       <Footer />
     </div>
   );
