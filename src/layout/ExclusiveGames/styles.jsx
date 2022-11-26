@@ -24,7 +24,7 @@ export const ContentExclusiveGames = styled.div`
                 p{
                     color: grey;
                     font-size: 15px;
-                    font-family: 'Poppins', sans-serif;
+                    font-family: 'Poppins';
                     font-weight: 600;
                     margin-bottom: 40px;
                 
