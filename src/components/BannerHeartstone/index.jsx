@@ -3,6 +3,9 @@ import IconHeartstone from '../../assets/banners/heartstone-icon.png'
 import Gifheartstone from '../../assets/banners/heartstone-gif.gif'
 import HeartstonePreview from '../../assets/banners/heartstone-preview.png'
 
+import IconPlayPolygon from '../../assets/icons-play/Polygon.png'
+import IconPlayEllipse from '../../assets/icons-play/Ellipse.png'
+
 const BannerHeartStone = ({visibleHeartStone}) => {
     if(!visibleHeartStone){
         return null
@@ -32,8 +35,11 @@ const BannerHeartStone = ({visibleHeartStone}) => {
                             </div>
                             <div className='play-gif'>
                                 <img src={Gifheartstone} alt="Gifheartstone" width="280" height="158" />
-                                <div
-                                    className="img-preview">
+                                <div className='button-play'>
+                                    <img className='icon-play-polygon' src={IconPlayPolygon} alt="icon-play-polygon" />
+                                    <img className='icon-play-ellipse' src={IconPlayEllipse} alt="icon-play-ellipse" />
+                                </div>
+                                <div className="img-preview">
                                     <img src={HeartstonePreview} alt="HeartstonePreview" />
                                 </div>
                             </div>

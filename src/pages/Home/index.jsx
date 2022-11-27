@@ -6,8 +6,8 @@ import Menu from "../../layout/Menu";
 function Home() {
   return (
     <div>
-      <Menu/>
-      <BannerDiablo/>
+      <Menu />
+      <BannerDiablo />
       <Exclusive />
       <Footer />
     </div>

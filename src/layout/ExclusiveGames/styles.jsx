@@ -12,22 +12,19 @@ export const ContentExclusiveGames = styled.div`
         justify-content: space-between;
         align-items:center;
         padding: 50px 0;
+
         .info-games{
             display: flex;
             align-items:center;
             gap: 165px;
          
-
             .games {
-                
-
                 p{
                     color: grey;
                     font-size: 15px;
                     font-family: 'Poppins';
                     font-weight: 600;
-                    margin-bottom: 40px;
-                
+                    margin-bottom: 40px;              
                 }
             }
 
@@ -88,13 +85,12 @@ export const ContentExclusiveGames = styled.div`
                 .image{
                     width: 100%;
                     height: 330px;
-                 
-                    transition: all .5s ease-in-out;  
+                    transition: all .5s ease-in-out; 
+                     
                     &:hover {    
                         transform: scale(1.2);                       
                     }
-                   
-                 }
+                }
         
                 .logo {
                     position: absolute;
@@ -127,7 +123,8 @@ export const ContentExclusiveGames = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 1px solid white;
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
         width: 258px;
         height: 330px;
 

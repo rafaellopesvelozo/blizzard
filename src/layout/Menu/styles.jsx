@@ -48,6 +48,34 @@ export const ContainerNav = styled.div`
 `;
 
 export const Links = styled.div`
+
+  .arrow-down{
+       
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7462%) hue-rotate(166deg) brightness(112%) contrast(100%);
+  }
+
+  .arrow-up{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    filter: brightness(0) saturate(100%) invert(52%) sepia(17%) saturate(6658%) hue-rotate(169deg) brightness(101%) contrast(105%);
+  }
+
+  .Arrow-Closed{
+    display: none;
+  }
+  .Arrow-Open{
+    display: block;
+  }
+
+
+
+
+
+
   ul {
     display: flex;
     gap: 50px;
@@ -58,6 +86,9 @@ export const Links = styled.div`
     color: ${({ theme }) => theme.colors.white};
     font-family: Poppins;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+
     
     &:hover {
       color: ${({ theme }) => theme.colors.darkGreywhite};
@@ -112,10 +143,13 @@ export const Enter = styled.div`
     font-weight: 500;
     cursor: pointer;
     font-size: 14px;
-   
 
+    Link{
+     
+      color: inherit;
+    }
     &:hover{
-      background-color: #009be2; 
+      background-color: #0089c9; 
       transition: all 2s ease-out; 
     }
   }

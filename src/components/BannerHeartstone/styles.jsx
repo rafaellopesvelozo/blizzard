@@ -25,8 +25,6 @@ export const ContainerBanner = styled.div`
             left: 0;
             right: 0;
             bottom: 0;
-    
-
         }
     }
     
@@ -99,7 +97,7 @@ export const ContainerBanner = styled.div`
             width: 280px;
             height:158px;
             border-radius: 6px;
-        } 
+        }   
     }
 
     .img-preview{
@@ -113,9 +111,6 @@ export const ContainerBanner = styled.div`
 
         &:hover{
             opacity: 0;
-        }
-       
+        }   
     }
-
-
 `
