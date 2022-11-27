@@ -35,7 +35,7 @@ export const ContainerBanner = styled.div`
     &:after{
         content: "";
         position: absolute;
-        bottom: 19px;
+        bottom: 20px;
         background-color: #00AEFF;
         width: 35%;
         height: 1.5px;
@@ -51,10 +51,10 @@ export const ContainerBanner = styled.div`
         display: flex;
         justify-content: space-between;
         background-image: url('${bgDiablo}');
-        background-position-y:-20px;
-        background-position-x:-10px;
+        background-position-x:-12px;
+        background-position-y:-30px;
         background-repeat: no-repeat;
-        background-size: 110%;
+        background-size: 130%;
         height: 670px;
 
         &:after {

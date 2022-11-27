@@ -4,13 +4,12 @@ export const contentGames = styled.div`
     position: absolute;
     z-index: 998;
     width: 100%;
-
     top: 0;
     left: 0;
     background: linear-gradient(0deg, rgba(2, 2 , 3, 0.99) 0%, rgba(14, 17, 23, 0.99) 90%, rgba(14, 17, 23, 0.9) 100%);
   
     ul{
-        padding: 9% 9% 2% 9%;
+        padding: 9% 9% 4% 9%;
         display: flex;
         height: 550px;
         justify-content: center;

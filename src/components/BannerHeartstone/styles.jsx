@@ -6,7 +6,7 @@ export const ContainerBanner = styled.div`
     &:after{
         content: "";
         position: absolute;
-        bottom: 19px;
+        bottom: 20px;
         background-color: #00AEFF;
         width: 67%;
         height: 1.5px; 
@@ -19,7 +19,7 @@ export const ContainerBanner = styled.div`
         background-image: url(${BgHeartstone});
         background-position-y:-20px;
         background-repeat: no-repeat;
-        background-size: 104%;
+        background-size: 130%;
         height: 670px;
 
         &:after {

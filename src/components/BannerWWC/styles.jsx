@@ -5,10 +5,11 @@ export const ContainerBanner = styled.div`
     &:after{
         content: "";
         position: absolute;
-        bottom: 19px;
+        bottom: 20px;
         background-color: #00AEFF;
         width: 80%;
         height: 1.5px;
+    
 
     }
 
@@ -17,12 +18,12 @@ export const ContainerBanner = styled.div`
         display: flex;
         justify-content: space-between;
         background-image: url('${BgWWC}');
-        background-position-y:-20px;
+        background-position:top right;
+        background-position-y: -20px;
         background-repeat: no-repeat;
-        background-size: 104%;
+        background-size: 130%;
         height: 670px;
-        
- 
+         
         &:after {
             content: "";
             background: radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);

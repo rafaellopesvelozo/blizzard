@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 
     ul{
-        padding: 12% 9%;
+        padding: 12% 9% 7.2% 9%;
         display: flex;
         justify-content: center;
         justify-content: space-between;
