@@ -3,6 +3,15 @@ import BgHeartstone from '../../assets/banners/heartstone-bg.png'
 
 export const ContainerBanner = styled.div`
     
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: 19px;
+        background-color: #00AEFF;
+        width: 67%;
+        height: 1.5px; 
+    }
+    
     .banner-content{
         position: relative;
         display: flex;
@@ -24,7 +33,7 @@ export const ContainerBanner = styled.div`
             top: 0;
             left: 0;
             right: 0;
-            bottom: 0;
+            bottom: 0px;
         }
     }
     
@@ -42,14 +51,14 @@ export const ContainerBanner = styled.div`
     .title p{
         font-size: 18px;
         font-family: 'Poppins';
-        color: ${({ theme }) => theme.colors.white};
+        color: #FFFFFF;
         letter-spacing: -0.005rem;
         font-weight: 400;
     }
     .title h1{
         font-size: 64px;
         font-family: 'Poppins';
-        color: ${({ theme }) => theme.colors.white};
+        color: #FFFFFF;
         font-weight: 700;
         width: 562px;
         line-height: 75px;

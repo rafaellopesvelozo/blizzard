@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './styles/globalStyles';
 import { theme } from "./styles/theme"
 import Home from './pages/Home';
-import Router from './router/Router';
+import Router from './routes/Router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

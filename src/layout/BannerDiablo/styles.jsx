@@ -32,6 +32,15 @@ export const LogoGames = styled.div`
 
 export const ContainerBanner = styled.div`
 
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: 19px;
+        background-color: #00AEFF;
+        width: 35%;
+        height: 1.5px;
+    }
+
     .transition{
       visibility: hidden;
       opacity: 0;
@@ -43,16 +52,15 @@ export const ContainerBanner = styled.div`
         justify-content: space-between;
         background-image: url('${bgDiablo}');
         background-position-y:-20px;
+        background-position-x:-10px;
         background-repeat: no-repeat;
-        background-position: inherit;
-        background-size: 104%;
+        background-size: 110%;
         height: 670px;
 
         &:after {
             content: "";
             background: radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);
             opacity: 0.5;
-            mix-blend-mode: multiply;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -161,7 +169,6 @@ export const ContainerBanner = styled.div`
                 transform: transition all 1s ease-in-out;
             }
         }
-
 
         .button-play{
             position: relative;

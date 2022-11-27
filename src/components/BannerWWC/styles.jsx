@@ -2,6 +2,15 @@ import styled from "styled-components";
 import BgWWC from '../../assets/banners/world-warcraft-bg.jpg'
 
 export const ContainerBanner = styled.div` 
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: 19px;
+        background-color: #00AEFF;
+        width: 80%;
+        height: 1.5px;
+
+    }
 
     .banner-content{
         position: relative;

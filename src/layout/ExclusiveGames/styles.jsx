@@ -16,7 +16,7 @@ export const ContentExclusiveGames = styled.div`
         .info-games{
             display: flex;
             align-items:center;
-            gap: 165px;
+            gap: 135px;
          
             .games {
                 p{
@@ -57,6 +57,7 @@ export const ContentExclusiveGames = styled.div`
                 color:  #00AEFF;
                 font-size: 16px;
                 font-weight: 600;
+                cursor: pointer;
             }
         }  
     }

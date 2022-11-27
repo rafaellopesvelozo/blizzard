@@ -53,7 +53,7 @@ export const Cards = styled.div`
 
     p{
         color: #9D9D9D;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins';
         font-size: 14px;
         transform: none;
         font-weight: 500;
@@ -81,10 +81,10 @@ export const menuContent = styled.div`
         }
 
         p{
-            color: ${({ theme }) => theme.colors.white};
-            font-family: 'Poppins', sans-serif;
+            color: #FFFFFF;
+            font-family: 'Poppins';
             font-size: 14px;
-            cursor: pointer;
+            font-weight: 600;
         }
     }  
 `

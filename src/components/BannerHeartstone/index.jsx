@@ -24,7 +24,6 @@ const BannerHeartStone = ({visibleHeartStone}) => {
                             <button>Reserve agora na pré-venda</button>
                         </div>
                     </div>
-
                     <div className='play-now'>
                         <div className='icon'>
                             <img src={IconHeartstone} alt="IconSeartstone" />
@@ -47,11 +46,6 @@ const BannerHeartStone = ({visibleHeartStone}) => {
                     </div>
                 </div>
             </div>
-            
-            <div>
-
-            </div>
-
         </styled.ContainerBanner>
     );
 }

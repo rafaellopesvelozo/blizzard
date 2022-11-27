@@ -11,6 +11,18 @@ export const ContanerFooter = styled.div`
     overflow: hidden;
     justify-content: space-between;
 
+    &:after {
+            content: "";
+            background: radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);
+            opacity: 0.5;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+    } 
 
     .info-content{
         display: flex;
@@ -74,8 +86,8 @@ export const ContanerFooter = styled.div`
     }
 
     .mini{
-   
         position: absolute;
+
         width: 100%;
         height: 100%;
         display: flex;
@@ -92,6 +104,7 @@ export const ContanerFooter = styled.div`
                 position: absolute;
                 bottom: -35px;
                 left: 665px;
+                z-index: 2;
             }
         }
     }

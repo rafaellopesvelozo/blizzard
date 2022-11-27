@@ -4,8 +4,14 @@ export const Content = styled.div`
   position: relative;
   
   hr {
+    position: absolute;
     color: ${({ theme }) => theme.colors.white};
     opacity: 10%;
+    width: 50px;
+    top: 86px;
+    height: 2px;
+    width: 100%;
+    z-index: 999;
   }
 `;
 
@@ -28,6 +34,7 @@ export const Header = styled.div`
     width: 40px;
     height: 1.5px;
   }
+
 `;
 
 export const ContainerNav = styled.div`
@@ -117,7 +124,6 @@ export const crateAccount = styled.div`
     font-weight: 500;
     cursor: pointer;
     
-
     &:hover{
       background-color: #FFFFFF;
       color: #000000;
@@ -144,10 +150,6 @@ export const Enter = styled.div`
     cursor: pointer;
     font-size: 14px;
 
-    Link{
-     
-      color: inherit;
-    }
     &:hover{
       background-color: #0089c9; 
       transition: all 2s ease-out; 
