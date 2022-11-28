@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
 import * as styled from './styles'
 
 import ListGames from '../../components/listGames';
@@ -9,11 +8,25 @@ import User from '../../assets/icons/user.png'
 import logo from "../../assets/logo-blizzard.png"
 import Open from '../../assets/icons/up-arrow.png'
 import Close from '../../assets/icons/down-arrow.png'
+import Login from '../../components/Login'
 
 const Menu = () => {
     const [gamesVisible, setGamesVisible] = useState(false)
     const [esportsVisible, setEsportsVisible] = useState(false)
+    const [loginOpen, setLoginOpen] = useState(false)
 
+    const handleOpenLogin = () => {
+        setLoginOpen(true)
+        if (gamesVisible === true || esportsVisible === true) {
+            setEsportsVisible(false)
+            setGamesVisible(false)
+        }
+    }
+    const handleCloseLogin = () => {
+        setLoginOpen(false)
+    }
+
+    
     const handleGames = () => {
         setGamesVisible(!gamesVisible)
         if (esportsVisible === true) {
@@ -27,6 +40,7 @@ const Menu = () => {
             setGamesVisible(false)
         }
     }
+
     return (
         <styled.Content>
             <styled.Header>
@@ -60,15 +74,12 @@ const Menu = () => {
                         <button>Criar conta</button>
                     </styled.crateAccount>
                     <styled.Enter>
-                        <Link to='/login'>
-                            <button>
-                                <img src={User} alt="user" />
-                                Logar
-                            </button>
-                        </Link>
+                        <button onClick={handleOpenLogin}>
+                            <img src={User} alt="user" />
+                            Logar
+                        </button>
                     </styled.Enter>
                     <div>
-
                     </div>
                 </styled.Login>
             </styled.Header>
@@ -78,10 +89,19 @@ const Menu = () => {
             <div>
                 <ListGames game={gamesVisible ? true : false} />
             </div>
+
             <div>
                 <ListEsports esports={esportsVisible ? true : false} />
             </div>
+
+            <div>
+                <Login
+                    isOpen={loginOpen}
+                    onRequestClose={handleCloseLogin}
+                />
+            </div>
         </styled.Content>
+
     );
 }
 export default Menu;

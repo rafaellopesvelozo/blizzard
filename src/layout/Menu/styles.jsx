@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   position: relative;
-  
+
   hr {
     position: absolute;
     color: ${({ theme }) => theme.colors.white};

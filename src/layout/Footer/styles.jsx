@@ -65,6 +65,7 @@ export const ContanerFooter = styled.div`
                 height: 17px;
             }
         }
+
         .icon-your-games{
             &::after{
                 content: "";
@@ -109,7 +110,6 @@ export const ContanerFooter = styled.div`
             line-height: 21px;
             cursor: pointer;
         }
-
 
         img{
             margin-top: 15px;

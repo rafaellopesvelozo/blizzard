@@ -115,5 +115,4 @@ const BannerDiablo = () => {
         </>
     );
 }
-
 export default BannerDiablo;
