@@ -9,6 +9,9 @@ import MacOS from '../../assets/ilustrations/macOS.png'
 import windows from '../../assets/ilustrations/windows.png'
 import linux from '../../assets/ilustrations/linux.png'
 import Phone from '../../assets/ilustrations/phone.png'
+import IconPlayGames from '../../assets/ilustrations/checkbox.png'
+import IconBuy from '../../assets/ilustrations/buy.png'
+import IconConnect from '../../assets/ilustrations/three-dots.png'
 
 
 const Footer = () => {
@@ -24,7 +27,7 @@ const Footer = () => {
         } else if (platform.includes('linux')) {
             setAgent("linux")
         }
-        
+
     }, [])
 
 
@@ -38,17 +41,17 @@ const Footer = () => {
 
                 <div className='content-icons'>
                     <div className='icon-your-games'>
-                        <img src="" alt="" />
+                        <img src={IconPlayGames} alt="play-your-games" />
                         <p className='info-footer'>  Seus jogos em um só lugar</p>
                     </div>
 
                     <div className='icon-log-in'>
-                        <img src="" alt="" />
+                        <img src={IconConnect} alt="connect-friends" />
                         <p className='info-footer'>  Conecte-se aos seus amigos</p>
                     </div>
 
                     <div className='icon-buy-games'>
-                        <img src="" alt="" />
+                        <img src={IconBuy} alt="buy" />
                         <p className='info-footer'>Compre jogos e itens digitais</p>
                     </div>
                 </div>
@@ -59,21 +62,21 @@ const Footer = () => {
                             {agent === "mac" && (
                                 <div className='download-for'>
                                     <img src={MacOS} alt={MacOS} />
-                                    <p>Baixar para MacOS</p>
+                                    <p>Baixar para o MacOS</p>
                                 </div>
                             )}
 
                             {agent === "linux" && (
                                 <div className='download-for'>
                                     <img src={linux} alt={linux} />
-                                    <p>Baixar para Linux</p>
+                                    <p>Baixar para o Linux</p>
                                 </div>
                             )}
 
                             {agent === "windows" && (
                                 <div className='download-for'>
                                     <img src={windows} alt={windows} />
-                                    <p>Baixar para Windows</p>
+                                    <p>Baixar para o Windows</p>
                                 </div>
                             )}
                         </div>

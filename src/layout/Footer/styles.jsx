@@ -47,12 +47,48 @@ export const ContanerFooter = styled.div`
 
     .content-icons{
         .info-footer{
-                font-size: 18px;
-                color:#828792;
-                font-weight: 400;
-                font-family: 'Poppins';
-                margin-top: 15px;
+            font-size: 18px;
+            color:#828792;
+            font-weight: 400;
+            font-family: 'Poppins';
+   
         }
+        .icon-your-games, .icon-log-in, .icon-buy-games{
+            position: relative;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 15px;
+
+            img{
+                width: 17px;
+                height: 17px;
+            }
+        }
+        .icon-your-games{
+            &::after{
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: 3.5px;
+                width: 10px;
+                height: 1px;
+                background-color: #00AEFF;
+                opacity: 0.5;
+               
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 1.5px;
+                left: 5px;
+                width: 7px;
+                height: 1px;
+                background-color: #00AEFF;
+                opacity: 0.3;
+            }
+        }
+
     }
 
     .avaliable{
@@ -87,7 +123,6 @@ export const ContanerFooter = styled.div`
 
     .mini{
         position: absolute;
-
         width: 100%;
         height: 100%;
         display: flex;
@@ -114,12 +149,7 @@ export const ContanerFooter = styled.div`
 
         button{
             background-color: #00AEFF;
-            font-size: 16px;
-            font-weight: 600;
-            color: #FFFFFF;
-           
             padding: 14px 32px;
-         
             border-radius: 4px;
             cursor: pointer;
             transition: all 2s ease-out;
@@ -128,12 +158,15 @@ export const ContanerFooter = styled.div`
              background-color: #0089c9; 
            
             }
-            
+
             .info-button{
                 .download-for{
                     display: flex;
                     align-items: center;
                     gap: 15px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #FFFFFF;
                 }
             }
         }
