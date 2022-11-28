@@ -1,11 +1,32 @@
+import { useEffect, useState } from 'react'
+
 import * as styled from './styles'
+
 import Battle from '../../assets/logo-battle-net.png'
 import AppMini from '../../assets/ilustrations/app-mini.png'
 import App from '../../assets/ilustrations/app.png'
 import MacOS from '../../assets/ilustrations/macOS.png'
+import windows from '../../assets/ilustrations/windows.png'
+import linux from '../../assets/ilustrations/linux.png'
 import Phone from '../../assets/ilustrations/phone.png'
 
+
 const Footer = () => {
+    const [agent, setAgent] = useState("")
+
+    useEffect(() => {
+        const platform = navigator.userAgent.toLocaleLowerCase()
+
+        if (platform.includes("mac")) {
+            setAgent('mac')
+        } else if (platform.includes("windows")) {
+            setAgent('windows')
+        } else if (platform.includes('linux')) {
+            setAgent("linux")
+        }
+        
+    }, [])
+
 
     return (
         <styled.ContanerFooter >
@@ -34,20 +55,40 @@ const Footer = () => {
 
                 <div className='system-download'>
                     <button>
-                        <img src={MacOS} alt={MacOS} />
-                        <p className='info-button'>Baixar para MacOS</p>
+                        <div className='info-button'>
+                            {agent === "mac" && (
+                                <div className='download-for'>
+                                    <img src={MacOS} alt={MacOS} />
+                                    <p>Baixar para MacOS</p>
+                                </div>
+                            )}
+
+                            {agent === "linux" && (
+                                <div className='download-for'>
+                                    <img src={linux} alt={linux} />
+                                    <p>Baixar para Linux</p>
+                                </div>
+                            )}
+
+                            {agent === "windows" && (
+                                <div className='download-for'>
+                                    <img src={windows} alt={windows} />
+                                    <p>Baixar para Windows</p>
+                                </div>
+                            )}
+                        </div>
                     </button>
                 </div>
 
-                <div className='avaliable'> 
+                <div className='avaliable'>
                     <img src={Phone} alt={Phone} />
                     <p>  Também disponível como <br /> <span>aplicativo móvel</span></p>
                 </div>
             </div>
-                
+
             <div className='mini'>
-                 <img className='app' src={App} alt={App} />
-                 <img className='app-mini' src={AppMini} alt={AppMini} />
+                <img className='app' src={App} alt={App} />
+                <img className='app-mini' src={AppMini} alt={AppMini} />
             </div>
 
         </styled.ContanerFooter>

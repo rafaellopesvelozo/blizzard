@@ -117,12 +117,25 @@ export const ContanerFooter = styled.div`
             font-size: 16px;
             font-weight: 600;
             color: #FFFFFF;
-            display: flex;
-            align-items: center;
+           
             padding: 14px 32px;
-            gap: 15px;
+         
             border-radius: 4px;
             cursor: pointer;
+            transition: all 2s ease-out;
+            
+            &:hover{
+             background-color: #0089c9; 
+           
+            }
+            
+            .info-button{
+                .download-for{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+            }
         }
     }
     
