@@ -52,6 +52,7 @@ const BannerWorldWarCraft = ({visibleWWc}) => {
                         </div>
                     </div>
                 </div>
+                <div id="current-arrow"></div>
             </div>
             
             <div>

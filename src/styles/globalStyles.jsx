@@ -11,9 +11,9 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body,#root{
-
        max-width: 1920px;
        height: 100vh;
+      margin: 0 auto;
     }
 
 `

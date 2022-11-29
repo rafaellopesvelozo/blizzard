@@ -49,6 +49,7 @@ const BannerHeartStone = ({visibleHeartStone}) => {
                         </div>
                     </div>
                 </div>
+                <div id="current-arrow"></div>
             </div>
         </styled.ContainerBanner>
     );

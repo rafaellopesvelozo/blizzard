@@ -2,7 +2,7 @@ import styled from "styled-components";
 import bgDiablo from '../../assets/banners/diablo-bg.png'
 
 export const LogoGames = styled.div`
- 
+
     .banner-logo{ 
         display:flex;
         flex-direction: column;
@@ -17,10 +17,29 @@ export const LogoGames = styled.div`
             width: 45px;
             height: 45px;
             cursor: pointer; 
-        }      
+        }  
+        
+        @media(min-width: 1920px){
+            left: 18%;
+        }
+
+        @media (max-width: 768px) {
+            display:flex;
+            flex-direction: row;
+            position: absolute;
+            top: 90%;
+            left: 5%;
+            gap: 17px;
+    
+            .logo-disabled{
+                display:flex;
+                flex-direction: row;
+            }   
+        }
+    
+        
     }
 
-  
     .logo-disabled{
         display:flex;
         flex-direction: column;
@@ -30,21 +49,9 @@ export const LogoGames = styled.div`
 `
 
 export const ContainerBanner = styled.div`
-
-
-    &:after{
-        content: "";
-        position: absolute;
-        bottom: 20px;
-        background-color: #00AEFF;
-        width: 35%;
-        height: 1.5px;
-    
-    }
-
     .transition{
-      visibility: hidden;
-      opacity: -10;
+        visibility: hidden;
+        opacity: -10;
     }
    
     .banner-content{
@@ -52,12 +59,22 @@ export const ContainerBanner = styled.div`
         display: flex;
         justify-content: space-between;
         background-image: url('${bgDiablo}');
+        background-position: top center;
+        background-size:cover;
         background-position-x:-12px;
         background-position-y:-30px;
         background-repeat: no-repeat;
-        background-size: 130%;
+        background-size: 117%;
         height: 670px;
+        filter: saturate(110%);
 
+        @media (max-width: 768px) {
+            height: 670px;
+            background-position: top;
+            background-size: 185%;
+            background-position-x: -150px;
+        }
+        
         &:after {
             content: "";
             background: radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);
@@ -71,11 +88,18 @@ export const ContainerBanner = styled.div`
             bottom: 0;
         } 
 
-
+        #current-arrow{
+            position: absolute;
+            height: 10px;
+            bottom: 0px;
+            background-color: #00aeff;
+            width: 35%;
+            height: 1.5px;
+            z-index: 1;
+        }  
         
     }
    
-
     .info-banner{
         position: absolute;
         z-index: 96;
@@ -90,7 +114,20 @@ export const ContainerBanner = styled.div`
             .icon{
                 margin-right: -30px; 
             }
+        } 
+        
+        
+        @media(min-width: 1920px){
+            padding: 0 18% 0 28%; 
         }
+
+        @media(max-width: 768px){
+            padding: 0 5% 0 5%; 
+            display: flex;
+            align-items: flex-start;
+            padding-top: 130px;
+        }
+   
     }
 
     .title p{
@@ -116,7 +153,7 @@ export const ContainerBanner = styled.div`
         color: #FFFFFF;
         font-weight: 600;
         font-size: 16px;
-        background-color: ${({ theme }) => theme.colors.blue};
+        background-color:#00aeff;
         border: none;
         outline: none;
         border-radius: 4px;
@@ -141,8 +178,14 @@ export const ContainerBanner = styled.div`
         justify-content:space-between;
         height: 68%;
         margin-top: 65px;
-     
 
+        @media(max-width: 768px){
+            height: 80%;
+            margin-top: -50px;
+            position: absolute;
+            right: 5%;
+        }
+     
         .play{
 
             .title-play{
@@ -152,6 +195,10 @@ export const ContainerBanner = styled.div`
                 font-weight: 600;
                 padding-bottom: 10px;
                 font-family: 'Poppins';
+
+                @media (max-width: 768px){
+                    display: none;
+                }
             }
 
             .play-gif{

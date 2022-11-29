@@ -4,8 +4,15 @@ export const ContentExclusiveGames = styled.div`
     display: flex;
     flex-direction: column;
     background: #000000;
-    color: white;
+    color: #FFFFFF;
     padding:0 7.8% 70px 7.8%;
+
+    @media(min-width: 1920px){
+        padding:0 18% 70px 18%;
+    }
+    @media(max-width: 768px){
+        padding:0 5% 70px 5%;
+    }
 
     .head-games{
         display: flex;
@@ -17,14 +24,23 @@ export const ContentExclusiveGames = styled.div`
             display: flex;
             align-items:center;
             gap: 135px;
+
+            @media(max-width: 768px){
+                gap: 80px;
+            }
          
             .games {
                 p{
-                    color: grey;
+                    color: #808080;
                     font-size: 15px;
                     font-family: 'Poppins';
                     font-weight: 600;
                     margin-bottom: 40px;              
+                }
+
+                @media(max-width: 768px){                    
+                    display: none;
+                    
                 }
             }
 
@@ -63,17 +79,35 @@ export const ContentExclusiveGames = styled.div`
     }
 
     .exclusive-cards{
-      
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
 
-     
+        @media(min-width: 1920px){
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        @media(max-width: 768px){
+            justify-content: flex-start;
+        
+        }
 
         .cards{
             width: 258px;
             height: 405px;
             margin-bottom: 20px;
+
+            @media(min-width: 1920px){
+                width: 270px;
+            }
+            
+            @media(max-width: 768px){
+                width: 217px;
+        
+            }
 
             .card-image{
                 position: relative;
@@ -114,7 +148,6 @@ export const ContentExclusiveGames = styled.div`
                 font-family: 'Poppins';
                 color:#E5E5E5;
                 opacity: 0.8;
-            
             }
         }
     }
@@ -128,6 +161,11 @@ export const ContentExclusiveGames = styled.div`
         border-radius: 3px;
         width: 258px;
         height: 330px;
+
+        @media(max-width: 768px){
+            width: 217px;
+            
+        }
 
         .img-card-view-all-games{
             margin-bottom: 20px;
@@ -161,8 +199,7 @@ export const ContentExclusiveGames = styled.div`
                 font-size: 16px;
                 font-weight: 600;
                 font-family: 'Poppins';
-                cursor: pointer;
-            
+                cursor: pointer;          
             }
         }
     }

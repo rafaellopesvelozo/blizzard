@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   position: relative;
-
   hr {
     position: absolute;
-    color: ${({ theme }) => theme.colors.white};
+    color: #FFFFFF;
     opacity: 10%;
     width: 50px;
     top: 86px;
@@ -13,6 +12,7 @@ export const Content = styled.div`
     width: 100%;
     z-index: 999;
   }
+
 `;
 
 export const Header = styled.div`
@@ -30,10 +30,30 @@ export const Header = styled.div`
     position: absolute;
     bottom: -2px;
     left: 7.8%;
-    background-color: ${({ theme }) => theme.colors.blue};
+    background-color: #0089c9;
     width: 40px;
     height: 1.5px;
   }
+
+  
+  @media(min-width: 1920px) {
+    padding:0 18%;
+
+    &:after {
+      left: 18%;
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    padding:0 5%;
+
+    &:after {
+      left: 5%;
+
+    }
+  }
+ 
 
 `;
 
@@ -55,9 +75,7 @@ export const ContainerNav = styled.div`
 `;
 
 export const Links = styled.div`
-
   .arrow-down{
-       
     width: 10px;
     height: 10px;
     margin-left: 10px;
@@ -79,26 +97,27 @@ export const Links = styled.div`
   }
 
 
-
-
-
-
   ul {
     display: flex;
     gap: 50px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+    
   }
+
   li {
     font-size: 14px;
     cursor: pointer;
-    color: ${({ theme }) => theme.colors.white};
+    color: #FFFFFF;
     font-family: Poppins;
     font-weight: 500;
     display: flex;
     align-items: center;
 
-    
     &:hover {
-      color: ${({ theme }) => theme.colors.darkGreywhite};
+      color:#d6d6d6;
      
     }
   }
@@ -116,10 +135,10 @@ export const crateAccount = styled.div`
     padding: 10px 25px;
     background-color: transparent;
     outline: none;
-    border: 1px solid ${({ theme }) => theme.colors.white};
+    border:  #FFFFFF;
     border-radius: 3px;
     font-size: 14px;
-    color: ${({ theme }) => theme.colors.white};
+    color: #FFFFFF;
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
@@ -140,11 +159,11 @@ export const Enter = styled.div`
     display: flex;
     align-items: center;
     padding: 10px 25px;
-    background-color: ${({ theme }) => theme.colors.blue};
+    background-color: #00aeff;
     border: 1px solid transparent;
     outline: none;
     border-radius: 3px;
-    color: ${({ theme }) => theme.colors.white};
+    color: #FFFFFF;
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;

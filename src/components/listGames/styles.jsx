@@ -9,13 +9,19 @@ export const contentGames = styled.div`
     background: linear-gradient(0deg, rgba(2, 2 , 3, 0.99) 0%, rgba(14, 17, 23, 0.99) 90%, rgba(14, 17, 23, 0.9) 100%);
   
     ul{
-        padding: 9% 9% 4% 9%;
+        padding: 9% 5% 4% 9%;
         display: flex;
-        height: 550px;
-        justify-content: center;
-        justify-content: space-between;
+        height: 580px;
         flex-wrap: wrap;
-        gap: 20px;
+        justify-content: center;
+        gap: 21px;
+    }
+
+    @media(max-width: 1920px){
+        ul{
+            padding: 7% 15% 2% 15%;
+            height: 540px;
+        }
     }
 `
 export const Cards = styled.div`
@@ -29,11 +35,12 @@ export const Cards = styled.div`
     border-radius: 10px;
     cursor: pointer;
 
+
     &:hover{
-        background-color:  ${({ theme }) => theme.colors.black};
-        //transform: scale(1.05);
+        background-color:  #000000;
+        
         p{
-            color: white;
+            color: #FFFFFF;
         }
         
         img{
@@ -56,14 +63,13 @@ export const Cards = styled.div`
         font-size: 14px;
         transform: none;
         font-weight: 500;
-
     }
  
 `
 
 export const menuContent = styled.div`
     padding: 20px 0;
-    color: white;
+    color: #FFFFFF;
     display: flex;
     text-align: center;
     justify-content: center;

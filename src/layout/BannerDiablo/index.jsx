@@ -56,10 +56,8 @@ const BannerDiablo = () => {
     return (
         <>
             <styled.LogoGames >
-                <div className={ `banner-logo`}>
-                  
+                <div className="banner-logo"> 
                     <img onClick={handleDiablo}  src={Game1} alt={Game1} />
-
                     <img onClick={handleHeartStone} src={Game2} alt={Game2} />
                     <img onClick={handleWWC} src={Game3} alt={Game3}/>
 
@@ -67,7 +65,6 @@ const BannerDiablo = () => {
                         <img src={Game4} alt={Game4} />
                         <img src={Game5} alt={Game5} />
                     </div>
-
                 </div>
             </styled.LogoGames>
 
@@ -86,7 +83,6 @@ const BannerDiablo = () => {
                                 </button>
                             </div>
                         </div>
-
                         <div className='play-now'>
                             <div className='icon'>
                                 <img src={IconDiablo} alt={IconDiablo} />
@@ -109,6 +105,7 @@ const BannerDiablo = () => {
                             </div>
                         </div>
                     </div>
+                    <div id="current-arrow"></div>
                 </div>
                 <div>
                     <BannerHeartStone visibleHeartStone={visibleHeartStone} />

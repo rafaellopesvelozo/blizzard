@@ -38,7 +38,6 @@ const Exclusive = () => {
                         <img src={iconExclusive4} alt={iconExclusive4} />
                     </div>
                 </div>
-
                 <div className='all-games'>
                     <div className='iconAllGames'>
                         <img src={Grid} alt={Grid} />
@@ -46,7 +45,6 @@ const Exclusive = () => {
                     <p>Ver todos os jogos</p>
                 </div>
             </div>
-
             <div className='exclusive-cards'>
                 {
                     listGamesEsclusive.length === 0 && (
@@ -68,8 +66,7 @@ const Exclusive = () => {
                         </div>
                     ))
                 }
-
-                <div className='card-view-all-games'>             
+                <div className='card-view-all-games'>
                     <div className='img-card-view-all-games'>
                         <img src={Logo} alt={Logo} />
                     </div>
@@ -77,11 +74,9 @@ const Exclusive = () => {
                         <img src={Grid} alt={Grid} />
                         <p>Ver todos os jogos</p>
                     </div>
-                  
                 </div>
             </div>
         </styled.ContentExclusiveGames>
     );
 }
-
 export default Exclusive;

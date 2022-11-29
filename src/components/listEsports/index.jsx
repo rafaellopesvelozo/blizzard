@@ -1,11 +1,11 @@
 import * as styled from './styles'
-
 import HeartStone from '../../assets/esports/heart-stone.png'
 import OverWatch from '../../assets/esports/Overwatch-World-Cup.png'
 import OverWatchLeague from '../../assets/esports/Overwatch-League.png'
 import ArenaWorldCupr from '../../assets/esports/awc.png'
 import StarCraft from '../../assets/esports/star-craft.png'
 import IconCup from '../../assets/icons/cup.png'
+
 const ListEsports = ({esports}) => {
     if(!esports){
         return null

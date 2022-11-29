@@ -11,6 +11,15 @@ export const ContanerFooter = styled.div`
     overflow: hidden;
     justify-content: space-between;
 
+    @media (min-width: 1920px) {
+        padding:0 0 0 18%;
+    }
+    @media (max-width: 768px) {
+        padding:0 0 0 5%;
+    }
+    
+
+
     &:after {
             content: "";
             background: radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);
@@ -34,7 +43,6 @@ export const ContanerFooter = styled.div`
         top:  calc(50% - 253px );    ;
 
         .download{
-
             .info-download{
                 font-size: 32px;
                 color: #FFFFFF;
@@ -144,6 +152,36 @@ export const ContanerFooter = styled.div`
                 filter: saturate(120%);
             }
         }
+
+        @media (min-width: 1920px) {
+            img{
+                :nth-child(1){
+                    left:500px;
+                }
+            }
+
+            img{
+                :nth-child(2){
+                    left: 715px;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            img{
+                :nth-child(1){
+                    left: 220px;
+                }
+            }
+
+            img{
+                :nth-child(2){
+                    left: 375px;
+                }
+            }
+        }
+
+
     }
 
     .system-download{
@@ -154,10 +192,16 @@ export const ContanerFooter = styled.div`
             padding: 14px 32px;
             border-radius: 4px;
             cursor: pointer;
-            transition: all 2s ease-out;
+            border: none;
+            outline: none;
+
+            @media (max-width: 768px) {
+                padding: 14px 22px;
+            }
             
             &:hover{
              background-color: #0089c9; 
+             transition: all 2s ease-out;
            
             }
 

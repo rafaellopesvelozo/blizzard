@@ -9,8 +9,6 @@ export const Container = styled.div`
     background: linear-gradient(180deg,rgba(14, 17, 23, 0.99)  0%, rgba(2, 2, 3, 0.99) 100%);
 
  
-
-
     ul{
         padding: 12% 9% 7.2% 9%;
         display: flex;
@@ -57,7 +55,7 @@ export const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: #FFFFFF;
         padding: 20px 0;
         width: 100%;
         gap: 25px;
