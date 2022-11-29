@@ -10,21 +10,6 @@ export const ContainerBanner = styled.div`
         background-position:center right;
         background-repeat: no-repeat;
         height: 670px;
-        
-        @media (max-width: 768px) {
-            background-size: 140% 140%;  
-            
-            .info-banner{
-                .play-now{
-                    .icon{
-                        img{
-                            width: 300px;
-                        }
-                
-                    }
-                }
-            }
-        }
 
         .banner-title{
             .title h1{
@@ -34,9 +19,7 @@ export const ContainerBanner = styled.div`
                 font-weight: 700;
                 width: 520px;
                 line-height: 75px;
-                padding-bottom: 15px;
-
-                
+                padding-bottom: 15px;        
             }
         }
 

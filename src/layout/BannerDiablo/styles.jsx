@@ -112,7 +112,11 @@ export const ContainerBanner = styled.div`
 
         .play-now{
             .icon{
-                margin-right: -30px; 
+                margin-right: -30px;
+                img{
+                    width: 280px;
+                }
+                    
             }
         } 
         
