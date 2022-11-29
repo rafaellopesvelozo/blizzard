@@ -2,7 +2,7 @@ import styled from "styled-components";
 import bgDiablo from '../../assets/banners/diablo-bg.png'
 
 export const LogoGames = styled.div`
-  
+ 
     .banner-logo{ 
         display:flex;
         flex-direction: column;
@@ -12,25 +12,25 @@ export const LogoGames = styled.div`
         gap: 17px;
         z-index: 105;
         width: 45px;
-    
+
         img{
             width: 45px;
             height: 45px;
-            cursor: pointer;   
-            mix-blend-mode: luminosity;
+            cursor: pointer; 
         }      
     }
 
+  
     .logo-disabled{
         display:flex;
         flex-direction: column;
         gap: 17px;
-        border: 1px solid red;
         mix-blend-mode: luminosity;
     }  
 `
 
 export const ContainerBanner = styled.div`
+
 
     &:after{
         content: "";
@@ -39,11 +39,12 @@ export const ContainerBanner = styled.div`
         background-color: #00AEFF;
         width: 35%;
         height: 1.5px;
+    
     }
 
     .transition{
       visibility: hidden;
-      opacity: 0;
+      opacity: -10;
     }
    
     .banner-content{
@@ -69,12 +70,15 @@ export const ContainerBanner = styled.div`
             right: 0;
             bottom: 0;
         } 
+
+
+        
     }
    
 
     .info-banner{
         position: absolute;
-        z-index: 99;
+        z-index: 96;
         height: 100%;
         width: 100%;
         align-items: center;
@@ -82,6 +86,11 @@ export const ContainerBanner = styled.div`
         display: flex;
         padding: 0 7.8% 0 22.4%; 
 
+        .play-now{
+            .icon{
+                margin-right: -30px; 
+            }
+        }
     }
 
     .title p{
@@ -114,105 +123,116 @@ export const ContainerBanner = styled.div`
         margin-top: 20px;
         cursor: pointer;
 
+        img{
+            margin-right: 10px;
+        }
+
         &:hover{
             background-color: #0089c9; 
             transition: all 2s ease-out; 
         }
     }
 
+
     .play-now{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content:space-between;
-        height: 70%;
-        border-radius: 6px;
-    }
+        height: 68%;
+        margin-top: 65px;
+     
 
-    .title-play{
-        color: #FFFFFF;
-        text-align: right;
-        font-size: 13px;
-        font-weight: 600;
-        padding-bottom: 10px;
-        font-family: 'Poppins';
-    }
-    .play-gif{
-        position: relative; 
+        .play{
 
-        img{
-            width: 280px;
-            height:158px;
-            border-radius: 6px;
-        } 
-
-        &:hover{
-            .button-play{
-                background-color:  #009ae255;
-                transform: transition all 1s ease-in-out;
+            .title-play{
+                color: #FFFFFF;
+                text-align: right;
+                font-size: 13px;
+                font-weight: 600;
+                padding-bottom: 10px;
+                font-family: 'Poppins';
             }
 
-            .icon-play-polygon{           
-                filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(13deg) brightness(92%) contrast(107%);
-                transform: transition all 1s ease-in-out;
-            }
+            .play-gif{
+                position: relative; 
 
-            .icon-play-ellipse{
-                filter: brightness(0) 
-                saturate(100%) 
-                invert(44%) 
-                sepia(90%) 
-                saturate(2136%) 
-                hue-rotate(170deg) 
-                brightness(94%) 
-                contrast(101%);
-                transform: transition all 1s ease-in-out;
-            }
-        }
+                img{
+                    width: 280px;
+                    height:158px;
+                    border-radius: 6px;
+                } 
 
-        .button-play{
-            position: relative;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60px;
-            width: 60px;
-            left: 100px;
-            border-radius: 50%;
-            top: calc(50% - 25.5px);
-            z-index: 2;
-            background-color: transparent;
-            
-            .icon-play-polygon{
+                &:hover{
+                    .button-play{
+                        background-color:  #009ae255;
+                        transform: transition all 1s ease-in-out;
+                    }
+
+                    .icon-play-polygon{           
+                        filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(13deg) brightness(92%) contrast(107%);
+                        transform: transition all 1s ease-in-out;
+                    }
+
+                    .icon-play-ellipse{
+                        filter: brightness(0) 
+                        saturate(100%) 
+                        invert(44%) 
+                        sepia(90%) 
+                        saturate(2136%) 
+                        hue-rotate(170deg) 
+                        brightness(94%) 
+                        contrast(101%);
+                        transform: transition all 1s ease-in-out;
+                    }
+                }
+
+                .button-play{
+                    position: relative;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 60px;
+                    width: 60px;
+                    left: 100px;
+                    border-radius: 50%;
+                    top: calc(50% - 25.5px);
+                    z-index: 2;
+                    background-color: transparent;
+                    
+                    .icon-play-polygon{
+                        position: absolute;
+                        z-index: 4;
+                        left: 24px;
+                        top: 22px;
+                        width: 15px;
+                        height: 15px;       
+                    }
+
+                    .icon-play-ellipse{
+                        width: 51px;
+                        height: 51px;
+                        opacity: 0.9;               
+                    }
+                }
+            }
+        
+
+            .img-preview{
                 position: absolute;
-                z-index: 4;
-                left: 24px;
-                top: 22px;
-                width: 15px;
-                height: 15px;       
-            }
+                top: 0;
+                transition: all 1s;
 
-            .icon-play-ellipse{
-                width: 51px;
-                height: 51px;
-                opacity: 0.9;               
+                img{
+                    width: 100%;
+                }
+
+                &:hover{
+                    opacity: 0;
+                }      
             }
         }
     }
 
-
-    .img-preview{
-        position: absolute;
-        top: 0;
-        transition: all 1s;
-
-        img{
-            width: 100%;
-        }
-
-        &:hover{
-            opacity: 0;
-        }      
-    }
 `

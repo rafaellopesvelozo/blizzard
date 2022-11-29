@@ -9,7 +9,7 @@ import Game5 from '../../assets/icons-banner-herro/game-5.png'
 import IconDiablo from '../../assets/banners/diablo-icon.png'
 import GifDiablo from '../../assets/banners/diablo-gif.gif'
 import DiabloPreview from '../../assets/banners/diablo-preview.png'
-
+import IconUser from '../../assets/icons/user.png'
 import IconPlayPolygon from '../../assets/icons-play/Polygon.png'
 import IconPlayEllipse from '../../assets/icons-play/Ellipse.png'
 
@@ -56,12 +56,14 @@ const BannerDiablo = () => {
     return (
         <>
             <styled.LogoGames >
-                <div className='banner-logo'>
-                    <img onClick={handleDiablo} className={`${visibleDiablo ? "" : ""}`} src={Game1} alt={Game1} />
-                    <img onClick={handleHeartStone} src={Game2} alt={Game2} />
-                    <img onClick={handleWWC} src={Game3} alt={Game3} />
+                <div className={ `banner-logo`}>
+                  
+                    <img onClick={handleDiablo}  src={Game1} alt={Game1} />
 
-                    <div className='logo-disabled'>
+                    <img onClick={handleHeartStone} src={Game2} alt={Game2} />
+                    <img onClick={handleWWC} src={Game3} alt={Game3}/>
+
+                    <div className='logo-disabled blend'>
                         <img src={Game4} alt={Game4} />
                         <img src={Game5} alt={Game5} />
                     </div>
@@ -78,7 +80,10 @@ const BannerDiablo = () => {
                                 <p>O retorno de Lilith uma era de escuridão e sofrimento</p>
                             </div>
                             <div className='banner-btn'>
-                                <button>Jogue agora</button>
+                                <button>
+                                    <img src={IconUser} alt="icon-user" />
+                                    Jogue agora
+                                </button>
                             </div>
                         </div>
 
@@ -106,10 +111,10 @@ const BannerDiablo = () => {
                     </div>
                 </div>
                 <div>
-                    <BannerHeartStone visibleHeartStone={visibleHeartStone ? true : false} />
+                    <BannerHeartStone visibleHeartStone={visibleHeartStone} />
                 </div>
                 <div>
-                    <BannerWorldWarCraft visibleWWc={visibleWWc ? true : false} />
+                    <BannerWorldWarCraft visibleWWc={visibleWWc} />
                 </div>
             </styled.ContainerBanner>
         </>

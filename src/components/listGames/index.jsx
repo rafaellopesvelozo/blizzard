@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import * as styled from './styles'
 import { api } from '../../services/api'
 import Forum from "../../assets/icons/forum.png"
-import Menu from "../../assets/icons/menu.png"
+import Menu from "../../assets/icons/grid.png"
 import Download from "../../assets/icons/download.png"
 import Spinner from "../../assets/icons/spinner.png"
 

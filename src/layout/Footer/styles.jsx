@@ -127,6 +127,7 @@ export const ContanerFooter = styled.div`
         height: 100%;
         display: flex;
         align-items: center;
+        
         img{
             :nth-child(1){
                 position: absolute;
@@ -140,6 +141,7 @@ export const ContanerFooter = styled.div`
                 bottom: -35px;
                 left: 665px;
                 z-index: 2;
+                filter: saturate(120%);
             }
         }
     }

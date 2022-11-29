@@ -15,23 +15,23 @@ const ListEsports = ({esports}) => {
             <ul>
                 <div className='section-games'>
                    <img src={HeartStone} alt="heart-stone" />
-                   <p>Heartstone masters</p>
+                   <p>Heartstone&reg; masters</p>
                 </div>
                 <div className='section-games'>
                    <img src={ArenaWorldCupr} alt="arena-world-cup" />
-                   <p>Campeonato Muncial de Arena WoW</p>
+                   <p>Campeonato Muncial de Arena WoW&reg;</p>
                 </div>
                 <div className='section-games'>
                    <img src={StarCraft} alt="star-craft" />
-                   <p>StarCraft II WCS</p>
+                   <p>StarCraft&reg; II WCS</p>
                 </div>
                 <div className='section-games'>
                    <img src={OverWatch}alt="overwatch" />
-                   <p>Copa Mundial de Overwatch</p>
+                   <p>Copa Mundial de Overwatch&reg;</p>
                 </div>
                 <div className='section-games'>
                    <img src={OverWatchLeague} alt="over-watch-league" />
-                   <p>Liga de Overwatch</p>
+                   <p>Liga de Overwatch&reg;</p>
                 </div>
             </ul>
             <div className='tournament-esports'>

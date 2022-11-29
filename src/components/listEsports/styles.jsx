@@ -67,6 +67,8 @@ export const Container = styled.div`
             font-size: 16px;
             font-weight: 600;
             font-family: 'Poppins';
+            cursor: pointer;
+            
         }
         img{
             width: 15px;

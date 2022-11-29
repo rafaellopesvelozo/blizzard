@@ -6,6 +6,7 @@ import PreviewWWC from '../../assets/banners/worldwarcraft-preview.png'
 
 import IconPlayPolygon from '../../assets/icons-play/Polygon.png'
 import IconPlayEllipse from '../../assets/icons-play/Ellipse.png'
+import IconUser from '../../assets/icons/user.png'
 
 const BannerWorldWarCraft = ({visibleWWc}) => {
     if(!visibleWWc){
@@ -21,7 +22,10 @@ const BannerWorldWarCraft = ({visibleWWc}) => {
                             <p>O que jaz além do mundo que você conhece?</p>
                         </div>
                         <div className='banner-btn'>
-                            <button>Reserve agora na pré-venda</button>
+                            <button>
+                                <img src={IconUser} alt="icon-user" />
+                                Reserve agora na pré-venda
+                            </button>
                         </div>
                     </div>
 

@@ -5,6 +5,7 @@ import HeartstonePreview from '../../assets/banners/heartstone-preview.png'
 
 import IconPlayPolygon from '../../assets/icons-play/Polygon.png'
 import IconPlayEllipse from '../../assets/icons-play/Ellipse.png'
+import IconUser from '../../assets/icons/user.png'
 
 const BannerHeartStone = ({visibleHeartStone}) => {
     if(!visibleHeartStone){
@@ -21,7 +22,10 @@ const BannerHeartStone = ({visibleHeartStone}) => {
                             <p>A horda e a Aliança se encontram no Vale Alterac para lutar</p>
                         </div>
                         <div className='banner-btn'>
-                            <button>Reserve agora na pré-venda</button>
+                          <button>
+                                <img src={IconUser} alt="icon-user" />
+                                 Reserve agora na pré-venda
+                          </button>
                         </div>
                     </div>
                     <div className='play-now'>
