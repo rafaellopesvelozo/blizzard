@@ -108,19 +108,15 @@ export const ContentExclusiveGames = styled.div`
     .exclusive-cards{
         width: 100%;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 16px;
 
-        //@media(min-width: 1440px){
-            //gap: 40px;
-                
-        //}
-        
+               
         @media(min-width: 1920px){
             display: flex;
-            justify-content: space-between;
-            gap: 30px;
+            gap: 20px;
         }
       
         @media(max-width: 768px){
@@ -129,7 +125,7 @@ export const ContentExclusiveGames = styled.div`
         }
 
         .cards{
-            width: 17.5rem; 
+            width: 16.5rem; 
             margin-bottom: 10px;
 
             @media(min-width: 1440px){
@@ -137,7 +133,7 @@ export const ContentExclusiveGames = styled.div`
             } 
             
             @media(min-width: 1920px){
-                width: 270px;
+                width: 290px;
             }
             
 
