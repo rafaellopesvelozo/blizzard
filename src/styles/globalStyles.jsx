@@ -10,10 +10,9 @@ export const GlobalStyles = createGlobalStyle`
         font-family: sans-serif;
     }
 
-    body,#root{
+    body,#root, html{
        max-width: 1920px;
        height: 100vh;
-      margin: 0 auto;
     }
 
 `
