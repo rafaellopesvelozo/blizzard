@@ -144,6 +144,7 @@ export const ContainerBanner = styled.div`
 
             @media(max-width: 375px){
                 padding-top: 130px;
+                height: 600px;
             }
 
          
