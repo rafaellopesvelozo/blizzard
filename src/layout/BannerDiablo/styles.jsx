@@ -33,7 +33,7 @@ export const LogoGames = styled.div`
             display:flex;
             flex-direction: row;
             position: absolute;
-            top: 530px;
+            top: 570px;
             left: 33px;
             gap: 17px;
         }
@@ -156,7 +156,7 @@ export const ContainerBanner = styled.div`
                 }
 
                 @media(max-width: 768px){
-                    width: 82%
+                    width: 73%
                 }
 
                 @media(max-width: 375px){                        
