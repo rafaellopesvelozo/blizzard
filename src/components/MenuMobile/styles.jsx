@@ -11,7 +11,7 @@ export const ContentMobile = styled.div`
 
     .ul{ 
         img{
-            width: 40%;
+            width: 50%;
             margin-bottom: 50px;
         }
         width: 50%;
