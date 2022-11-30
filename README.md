@@ -2,6 +2,12 @@
   <img src="https://user-images.githubusercontent.com/101975205/203775856-2df0fc88-db67-4a16-bb64-80fff226a2e7.png" width="100%" />
 </p>
 
+<p align="center">
+  Deploy do projeto: https://vercel.com/rafaellopesvelozo/battle-net
+  <br/>
+</p>
+
+
 ## 💻 Projeto
 
 Esse projeto é uma landing page da empresa **Blizzard**, ela é composta por um menu de navegação, um banner hero com as informações dos principais jogos da empresa(Diablo, HearthStone e World of Warcraft), a listagem dos jogos exclusivos e um rodapé com informações do download do app battle.net.
