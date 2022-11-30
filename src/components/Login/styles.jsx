@@ -70,9 +70,12 @@ export const ContainerLogin = styled.div`
 
         @media (min-width: 1920px) {
             button{
-
                 font-size: 35px;
             }
+        }
+        @media (max-width: 768px) {
+            top: 70px;
+             right: 130px;
         }
     }
 
