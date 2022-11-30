@@ -176,7 +176,7 @@ export const crateAccount = styled.div`
     padding: 10px 25px;
     background-color: transparent;
     outline: none;
-    border:  #FFFFFF;
+    border: 1px solid #FFFFFF;
     border-radius: 3px;
     font-size: 14px;
     color: #FFFFFF;
