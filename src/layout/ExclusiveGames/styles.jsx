@@ -129,15 +129,14 @@ export const ContentExclusiveGames = styled.div`
         }
 
         .cards{
-            width: 17.84rem; 
+            width: 17.5rem; 
             margin-bottom: 10px;
 
-         
             @media(min-width: 1440px){
                 width: 288px; 
             } 
             
-            @media(max-width: 1920px){
+            @media(min-width: 1920px){
                 width: 270px;
             }
             
