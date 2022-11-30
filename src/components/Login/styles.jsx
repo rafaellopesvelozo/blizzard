@@ -13,6 +13,7 @@ export const ContainerLogin = styled.div`
     height: 100%;
 
     .content-form{
+        position: relative;
         box-shadow: -100px -100px 210px 100px #000 inset;
         width: 50%;
         display: flex;
@@ -53,6 +54,9 @@ export const ContainerLogin = styled.div`
        width: 100%;
        display: flex;
        justify-content: flex-end;
+       position: fixed;
+       top: 16%;
+       right: 22%;
 
         button{
             color:  #00AEFF;
@@ -60,11 +64,8 @@ export const ContainerLogin = styled.div`
             border: none;
             outline: none;
             cursor: pointer;
-            padding-right: 5%;
             font-size: 25px;
             font-weight: 600;
-
-          
         } 
 
         @media (min-width: 1920px) {
