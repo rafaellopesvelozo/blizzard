@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Deploy do projeto: https://vercel.com/rafaellopesvelozo/battle-net
+  Deploy do projeto: https://battle-net-eta.vercel.app
   <br/>
 </p>
 
