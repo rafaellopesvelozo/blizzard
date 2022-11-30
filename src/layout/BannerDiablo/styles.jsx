@@ -19,15 +19,15 @@ export const LogoGames = styled.div`
             cursor: pointer; 
         }  
         
+        @media(min-width: 1440px){
+            top: 23%;
+        }
+
         @media(min-width: 1920px){
             top: 19%;
             left: 18%;
         }
-
-        @media(max-width: 1440px){
-            top: 23%;
-        }
-        
+  
         @media (max-width: 768px) {
             display:flex;
             flex-direction: row;
@@ -35,12 +35,6 @@ export const LogoGames = styled.div`
             top: 82%;
             left: 5%;
             gap: 17px;
-    
-            .logo-disabled{
-                display:flex;
-                flex-direction: row;
-            } 
-
         }
         
         @media(max-width: 375px){
@@ -55,7 +49,14 @@ export const LogoGames = styled.div`
         flex-direction: column;
         gap: 17px;
         mix-blend-mode: luminosity;
-    }  
+
+        @media (max-width: 768px) {
+            display:flex;
+            flex-direction: row;
+            
+        }
+    } 
+
 `
 
 export const ContainerBanner = styled.div`

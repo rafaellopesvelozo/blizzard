@@ -106,37 +106,41 @@ export const ContentExclusiveGames = styled.div`
 
 
     .exclusive-cards{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
 
+        //@media(min-width: 1440px){
+            //gap: 40px;
+                
+        //}
+        
         @media(min-width: 1920px){
             display: flex;
             justify-content: space-between;
             gap: 30px;
         }
-        @media(min-width: 1440px){
-            gap: 40px;
-                
-        }
+      
         @media(max-width: 768px){
             justify-content: flex-start;
             gap: 20px;
         }
 
         .cards{
-            width: 258px; 
-            height: 405px;
+            width: 17.84rem; 
             margin-bottom: 10px;
 
-            @media(min-width: 1920px){
+         
+            @media(min-width: 1440px){
+                width: 288px; 
+            } 
+            
+            @media(max-width: 1920px){
                 width: 270px;
             }
-
-            @media(min-width: 1440px){
-                width: 273px;  
-            }  
+            
 
             @media(max-width: 768px){
                 width: 217px;  
