@@ -19,15 +19,15 @@ const Footer = () => {
 
     useEffect(() => {
         const platform = navigator.userAgent.toLocaleLowerCase()
-
+      
         if (platform.includes("mac")) {
             setAgent('mac')
         } else if (platform.includes("windows")) {
-            setAgent('windows')
+            setAgent('win')
         } else if (platform.includes('linux')) {
             setAgent("linux")
         }
-
+        console.log(platform)
     }, [])
 
 

@@ -26,13 +26,14 @@ export const ContainerLogin = styled.div`
         background-size: 100% 101%;
         background-size: 100%;
 
-        @media (min-width: 1920px) {
-            width: 60%;
-            height: 60%;
-        }
         @media (min-width: 1440px) {
+            width:65%;
+            height: 80%;
+        }
+        
+        @media (min-width: 1920px) {
             width: 65%;
-            height: 60%;
+            height: 75%;
         }
         @media (max-width: 768px) {
             width: 75%;
@@ -62,10 +63,13 @@ export const ContainerLogin = styled.div`
             padding-right: 5%;
             font-size: 25px;
             font-weight: 600;
+
+          
         } 
 
         @media (min-width: 1920px) {
             button{
+
                 font-size: 35px;
             }
         }
