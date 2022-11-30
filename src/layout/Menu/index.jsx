@@ -3,6 +3,8 @@ import * as styled from './styles'
 
 import ListGames from '../../components/listGames';
 import ListEsports from '../../components/listEsports';
+import MenuMob from '../../components/MenuMobile';
+
 
 import User from '../../assets/icons/user.png'
 import MenuMobile from '../../assets/icons/menu-mobile.png'
@@ -11,10 +13,21 @@ import Open from '../../assets/icons/up-arrow.png'
 import Close from '../../assets/icons/down-arrow.png'
 import Login from '../../components/Login'
 
+
 const Menu = () => {
     const [gamesVisible, setGamesVisible] = useState(false)
     const [esportsVisible, setEsportsVisible] = useState(false)
     const [loginOpen, setLoginOpen] = useState(false)
+    const [menuSanduiche, setMenuSanduiche] = useState(false)
+
+    const handleMobile = () => {
+        setMenuSanduiche(!menuSanduiche)
+        if (gamesVisible === true || esportsVisible === true || loginOpen === true) {
+            setEsportsVisible(false)
+            setGamesVisible(false)
+            setLoginOpen(false)
+        }
+    }
 
     const handleOpenLogin = () => {
         setLoginOpen(true)
@@ -80,8 +93,10 @@ const Menu = () => {
                             Logar
                         </button>
                     </styled.Enter>
-                    <div onclick={handleOpenLogin} className='menu-mobile'> 
-                        <img src={MenuMobile} alt="icon-menu-mobile" />  
+                    <div  onClick={handleMobile}  className="menu-mobile"> 
+                        <img src={MenuMobile} alt="icon-menu-mobile" />
+
+                        <MenuMob menu={menuSanduiche}/> 
                     </div>
                 </styled.Login>
             </styled.Header>
@@ -89,11 +104,11 @@ const Menu = () => {
             <hr />
 
             <div>
-                <ListGames game={gamesVisible ? true : false} />
+                <ListGames game={gamesVisible} />
             </div>
 
             <div>
-                <ListEsports esports={esportsVisible ? true : false} />
+                <ListEsports esports={esportsVisible} />
             </div>
 
             <div>

@@ -11,14 +11,16 @@ export const ContanerFooter = styled.div`
     overflow: hidden;
     justify-content: space-between;
 
-    @media (min-width: 1920px) {
-        padding:0 0 0 18%;
-    }
+   
 
-    @media (max-width: 1440px) {
+    @media (min-width: 1440px) {
         background-position:top;
     }
 
+    @media (min-width: 1920px) {
+        padding:0 0 0 18%;
+    }
+    
     @media (max-width: 768px) {
         background-position:center left;
         padding:0 0 0 5%;
@@ -223,7 +225,7 @@ export const ContanerFooter = styled.div`
             }
         }
 
-        @media(max-width: 1440px){
+        @media(min-width: 1440px){
             img{
                 :nth-child(1){
                     left: 445px;

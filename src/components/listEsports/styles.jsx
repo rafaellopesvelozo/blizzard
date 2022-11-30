@@ -33,10 +33,6 @@ export const Container = styled.div`
         width: 174px;
         text-align: center;
 
-        @media(min-width: 1920px){
-           
-       }
-
         &:hover{
             p{
                 color: #FFFFFF;

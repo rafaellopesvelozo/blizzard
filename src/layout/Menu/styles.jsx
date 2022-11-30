@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
+
   position: relative;
   hr {
     position: absolute;
@@ -139,6 +140,7 @@ export const Login = styled.div`
   .menu-mobile{
     margin-left: 80px;
     display: none;
+
 
     img{
       width: 30px;

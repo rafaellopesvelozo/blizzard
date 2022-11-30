@@ -20,7 +20,7 @@ export const LogoGames = styled.div`
         }  
         
         @media(min-width: 1920px){
-            top: 17%;
+            top: 19%;
             left: 18%;
         }
 
@@ -39,7 +39,8 @@ export const LogoGames = styled.div`
             .logo-disabled{
                 display:flex;
                 flex-direction: row;
-            }   
+            } 
+
         }
         
         @media(max-width: 375px){
@@ -78,19 +79,20 @@ export const ContainerBanner = styled.div`
         height: 670px;
         filter: saturate(110%);
 
+
         @media (max-width: 768px) {
             height: 670px;
             background-position: top;
             background-size: 185%;
             background-position-x: -150px;
         }
+
         @media(max-width: 375px){
             height: 625px;
             background-size: cover;
             background-position:center;
         }
    
-        
         &:after {
             content: "";
             background: radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);
@@ -114,7 +116,6 @@ export const ContainerBanner = styled.div`
             z-index: 1;
         } 
         
-        
         .info-banner{
             position: absolute;
             z-index: 96;
@@ -125,14 +126,15 @@ export const ContainerBanner = styled.div`
             display: flex;
             padding: 0 7.8% 0 22.4%; 
 
-            @media(min-width: 1920px){
-                padding: 0 18% 0 28%; 
-            }
-
-            @media(max-width: 1440px){
+            @media(min-width: 1440px){
                 padding: 0 7.8% 0 21%;
             }
-            
+
+            @media(min-width: 1920px){
+                padding: 0 18% 0 28%;
+                width: 100%;
+            }
+
             @media(max-width: 768px){
                 padding: 0 5%; 
                 display: flex;
@@ -144,7 +146,13 @@ export const ContainerBanner = styled.div`
                 padding-top: 130px;
             }
 
+         
+
             .banner-title{
+
+                @media(min-width: 1920px){
+                    width: 70%;
+                }
 
                 @media(max-width: 768px){
                     width: 82%
@@ -163,19 +171,24 @@ export const ContainerBanner = styled.div`
                         line-height: 75px;
                         padding-bottom: 15px;
                     }
-                
-                    @media(max-width: 768px){
-                        h1{
-                            font-size: 48px;
-                            line-height: 65px;
-                        } 
-                    }
 
-                    @media(max-width: 1440px){ 
+                    @media(min-width: 1440px){ 
                         h1{
                             width: 80%;
-                            
                         }
+                    }
+
+                    @media(min-width: 1920px){
+                        h1{
+                            width: 100%;
+                        }
+                    }
+
+                    @media(max-width: 768px){
+                        h1{
+                            font-size: 47px;
+                            line-height: 65px;
+                        } 
                     }
 
                     @media(max-width: 375px){ 
@@ -185,8 +198,9 @@ export const ContainerBanner = styled.div`
                             line-height: 50px;
                             padding-bottom: 20px;
                         }
-                    }
+                    } 
                 }
+                
                 .title p{
                     font-size: 18px;
                     font-family: 'Poppins';

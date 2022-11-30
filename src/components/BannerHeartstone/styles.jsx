@@ -21,7 +21,6 @@ export const ContainerBanner = styled.div`
 
         @media(max-width: 768px){
             background-position-x: -350px;
-            
             .info-banner{
                 .banner-title{
                     .title{

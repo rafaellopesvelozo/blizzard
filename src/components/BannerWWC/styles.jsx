@@ -14,7 +14,7 @@ export const ContainerBanner = styled.div`
         #current-arrow{  
             width: 80%;
         }
-        
+
         @media(max-width: 375px){
             background-position:center;
             background-size: 300% 100%;

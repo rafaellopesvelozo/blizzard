@@ -55,7 +55,6 @@ export const ContentExclusiveGames = styled.div`
                     font-family: 'Poppins', sans-serif;
                     font-weight: 700;
                 }
-
                 
                @media(max-width: 375px){
                     p{
@@ -63,7 +62,6 @@ export const ContentExclusiveGames = styled.div`
                     }
                 }
             }
-
 
             .icons{
                 display: flex;
@@ -118,7 +116,7 @@ export const ContentExclusiveGames = styled.div`
             justify-content: space-between;
             gap: 30px;
         }
-        @media(max-width: 1440px){
+        @media(min-width: 1440px){
             gap: 40px;
                 
         }
@@ -128,15 +126,15 @@ export const ContentExclusiveGames = styled.div`
         }
 
         .cards{
-            width: 258px;
+            width: 258px; 
             height: 405px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
             @media(min-width: 1920px){
                 width: 270px;
             }
 
-            @media(max-width: 1440px){
+            @media(min-width: 1440px){
                 width: 273px;  
             }  
 
@@ -190,7 +188,8 @@ export const ContentExclusiveGames = styled.div`
 
                 @media(max-width: 375px){
                     display: none;
-                }      
+                }
+
             }
 
             .name-category{
@@ -203,11 +202,14 @@ export const ContentExclusiveGames = styled.div`
                 @media(max-width: 375px){
                     display: none;
                 }
+
             }
+            
+
         }
 
         .card-view-all-games{
-             display: flex;
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -216,9 +218,12 @@ export const ContentExclusiveGames = styled.div`
             width: 258px;
             height: 330px;
 
+            @media(min-width: 1440px){
+                width: 273px;  
+            }  
+
             @media(max-width: 768px){
-                width: 217px;
-                    
+                width: 217px;      
             }
 
             @media(max-width: 375px){
@@ -263,10 +268,10 @@ export const ContentExclusiveGames = styled.div`
                 }
 
                 @media(max-width: 375px){
-
                     img{
                         display: none;
                     }
+                    
                     p{
                         font-size: 14px;
                     } 
