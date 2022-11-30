@@ -10,9 +10,15 @@ export const ContentMobile = styled.div`
     background-color: transparent;
 
     .ul{ 
+
         img{
-            width: 50%;
             margin-bottom: 50px;
+            @media(max-width: 768px){
+                width: 30%;
+            }
+            @media(max-width: 375px){
+                width: 50%;
+            }
         }
         width: 50%;
         height: 100%;
