@@ -15,11 +15,18 @@ export const ContanerFooter = styled.div`
         padding:0 0 0 18%;
     }
 
+    @media (max-width: 1440px) {
+        background-position:top;
+    }
+
     @media (max-width: 768px) {
+        background-position:center left;
         padding:0 0 0 5%;
     }
+
     @media (max-width: 375px) {
         background-image: url('${BgFooterMobile}');
+        background-size: cover;
         height: 1000px;
     }
 
@@ -50,7 +57,9 @@ export const ContanerFooter = styled.div`
         }
 
         .download{
-
+            img{
+                padding-bottom: 20px;
+            }
             .info-download{
                 font-size: 32px;
                 color: #FFFFFF;
@@ -70,20 +79,21 @@ export const ContanerFooter = styled.div`
             color:#828792;
             font-weight: 400;
             font-family: 'Poppins';
-   
         }
+
         .icon-your-games, .icon-log-in, .icon-buy-games{
             position: relative;
             display: flex;
-            gap: 10px;
+            gap: 15px;
             align-items: center;
-            margin-top: 15px;
+            margin-top: 20px;
 
             img{
                 width: 17px;
                 height: 17px;
             }
         }
+
 
         .icon-your-games{
             &::after{
@@ -213,16 +223,33 @@ export const ContanerFooter = styled.div`
             }
         }
 
-        @media (max-width: 768px) {
+        @media(max-width: 1440px){
             img{
                 :nth-child(1){
-                    left: 220px;
+                    left: 445px;
                 }
             }
 
             img{
                 :nth-child(2){
-                    left: 375px;
+                    left: 800px;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            img{
+                :nth-child(1){
+                    bottom: 175px;
+                    left: 290px;
+                    width: 897px;
+                    height: 506px;
+                }
+            }
+
+            img{
+                :nth-child(2){
+                    left: 395px;
                 }
             }
         }
@@ -232,26 +259,22 @@ export const ContanerFooter = styled.div`
                 :nth-child(1){
                     top: 560px;
                     left: 0;
-                    width: 400px;
+                    width: 500px;
                     height: 320px;
                 }
             }
 
             img{
                 :nth-child(2){
-                    left: 43px;
+                    left: 30px;
                     top: 705px;
                     height: 320px;
+                    width: 450px;
                 }
+
             }
         }
 
-        
-
-
     }
-
-    
-    
+  
 `
-

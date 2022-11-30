@@ -20,12 +20,12 @@ export const LogoGames = styled.div`
         }  
         
         @media(min-width: 1920px){
-            top: 20%;
+            top: 17%;
             left: 18%;
         }
 
         @media(max-width: 1440px){
-            top: 28%;
+            top: 23%;
         }
         
         @media (max-width: 768px) {
@@ -129,14 +129,30 @@ export const ContainerBanner = styled.div`
                 padding: 0 18% 0 28%; 
             }
 
+            @media(max-width: 1440px){
+                padding: 0 7.8% 0 21%;
+            }
+            
             @media(max-width: 768px){
                 padding: 0 5%; 
                 display: flex;
                 align-items: flex-start;
+                padding-top: 190px;
+            }
+
+            @media(max-width: 375px){
                 padding-top: 130px;
             }
 
             .banner-title{
+
+                @media(max-width: 768px){
+                    width: 82%
+                }
+
+                @media(max-width: 375px){                        
+                    width: 99%;                        
+                }
 
                 .title{
                     h1{
@@ -150,10 +166,16 @@ export const ContainerBanner = styled.div`
                 
                     @media(max-width: 768px){
                         h1{
-                            width: 490px;
-                            font-size: 45px;
+                            font-size: 48px;
                             line-height: 65px;
                         } 
+                    }
+
+                    @media(max-width: 1440px){ 
+                        h1{
+                            width: 80%;
+                            
+                        }
                     }
 
                     @media(max-width: 375px){ 
@@ -161,9 +183,9 @@ export const ContainerBanner = styled.div`
                             width: 100%;
                             font-size: 35px;
                             line-height: 50px;
+                            padding-bottom: 20px;
                         }
                     }
-
                 }
                 .title p{
                     font-size: 18px;
@@ -171,6 +193,10 @@ export const ContainerBanner = styled.div`
                     color: #FFFFFF;
                     letter-spacing: -0.005rem;
                     font-weight: 400;
+
+                    @media(max-width: 375px){                                           
+                        padding-bottom: 20px;                                              
+                    }
                 }
 
                 .banner-btn{
@@ -203,7 +229,6 @@ export const ContainerBanner = styled.div`
                             display: none;
                         } 
                     }
-
                 }
             }
 
@@ -212,8 +237,8 @@ export const ContainerBanner = styled.div`
                 flex-direction: column;
                 align-items: flex-end;
                 justify-content:space-between;
-                height: 68%;
-                margin-top: 65px;
+                height: 70%;
+                margin-top: 45px;
 
                 .icon{
                     margin-right: -30px;
@@ -225,7 +250,7 @@ export const ContainerBanner = styled.div`
 
                 @media(max-width: 768px){
                     height: 80%;
-                    margin-top: -50px;
+                    margin-top: -90px;
                     position: absolute;
                     right: 5%;
                 }

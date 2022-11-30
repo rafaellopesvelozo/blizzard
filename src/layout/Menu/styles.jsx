@@ -137,7 +137,7 @@ export const Login = styled.div`
   align-items: center;
 
   .menu-mobile{
-    margin-left: 20px;
+    margin-left: 80px;
     display: none;
 
     img{
@@ -201,9 +201,11 @@ export const Enter = styled.div`
     display: none;
   
   }
+
   img{
     margin-right: 6px;
   }
+
   button {
     display: flex;
     align-items: center;
