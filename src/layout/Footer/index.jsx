@@ -73,7 +73,7 @@ const Footer = () => {
                                 </div>
                             )}
 
-                            {agent === "windows" && (
+                            {agent === "win" && (
                                 <div className='download-for'>
                                     <img src={windows} alt={windows} />
                                     <p>Baixar para o Windows</p>

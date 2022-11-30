@@ -9,22 +9,17 @@ export const ContainerBanner = styled.div`
         background-image: url('${BgWWC}');
         background-position:center right;
         background-repeat: no-repeat;
-        height: 670px;
-
-        .banner-title{
-            .title h1{
-                font-size: 55px;
-                font-family: 'Poppins';
-                color: #FFFFFF;
-                font-weight: 700;
-                width: 520px;
-                line-height: 75px;
-                padding-bottom: 15px;        
-            }
-        }
-
+        height: 670px;       
+        
         #current-arrow{  
             width: 80%;
+        }
+        
+        @media(max-width: 375px){
+            background-position:center;
+            background-size: 300% 100%;
+            background-position-x: -530px;
+            
         }
     }
 `

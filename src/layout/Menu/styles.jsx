@@ -62,6 +62,10 @@ export const ContainerNav = styled.div`
   justify-content: space-between;
   gap: 110px;
   align-items: center;
+
+  @media(max-width: 375px){
+      gap: 0;
+  }
   
   div {
     display: flex;
@@ -120,17 +124,52 @@ export const Links = styled.div`
       color:#d6d6d6;
      
     }
+
+    @media(min-width: 1920px){
+      font-size: 20px;
+    }
   }
  
 `;
 
 export const Login = styled.div`
   display: flex;
+  align-items: center;
+
+  .menu-mobile{
+    margin-left: 20px;
+    display: none;
+
+    img{
+      width: 30px;
+      height: 30px;
+    }
+
+  }
+
+  @media(max-width: 768px){
+    .menu-mobile{
+      display: block;
+    }
+
+  }
+
+  @media(max-width: 375px){
+    .menu-mobile{
+      display: block;
+    }
+
+  }
+  
 `;
 
 export const crateAccount = styled.div`
   margin-right: 10px;
 
+  @media(max-width: 375px){
+    display: none;
+  
+  }
   button {
     padding: 10px 25px;
     background-color: transparent;
@@ -142,16 +181,26 @@ export const crateAccount = styled.div`
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
+
     
     &:hover{
       background-color: #FFFFFF;
       color: #000000;
       transition: all 2s ease-out;
     }
+
+    @media(min-width: 1920px){
+      font-size: 20px;
+    } 
   }
 `;
 
 export const Enter = styled.div`
+
+  @media(max-width: 375px){
+    display: none;
+  
+  }
   img{
     margin-right: 6px;
   }
@@ -173,5 +222,8 @@ export const Enter = styled.div`
       background-color: #0089c9; 
       transition: all 2s ease-out; 
     }
+    @media(min-width: 1920px){
+      font-size: 20px;
+    } 
   }
 `;

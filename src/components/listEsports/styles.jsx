@@ -16,6 +16,13 @@ export const Container = styled.div`
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 20px;
+
+       @media(min-width: 1920px){
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+       }
+       
    }
 
     .section-games{
@@ -25,6 +32,10 @@ export const Container = styled.div`
         gap: 30px;
         width: 174px;
         text-align: center;
+
+        @media(min-width: 1920px){
+           
+       }
 
         &:hover{
             p{
@@ -48,6 +59,11 @@ export const Container = styled.div`
             color: #9D9D9D;
             width: 105px;
             font-family: 'Poppins';
+
+            @media(min-width: 1920px){
+             font-size: 20px;
+             width: 190px;
+            }
         }
     }
     

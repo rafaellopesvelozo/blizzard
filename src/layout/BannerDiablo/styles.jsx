@@ -20,14 +20,19 @@ export const LogoGames = styled.div`
         }  
         
         @media(min-width: 1920px){
+            top: 20%;
             left: 18%;
         }
 
+        @media(max-width: 1440px){
+            top: 28%;
+        }
+        
         @media (max-width: 768px) {
             display:flex;
             flex-direction: row;
             position: absolute;
-            top: 90%;
+            top: 82%;
             left: 5%;
             gap: 17px;
     
@@ -36,7 +41,11 @@ export const LogoGames = styled.div`
                 flex-direction: row;
             }   
         }
-    
+        
+        @media(max-width: 375px){
+            left: 5%;
+            top: 77%;
+        }
         
     }
 
@@ -49,9 +58,10 @@ export const LogoGames = styled.div`
 `
 
 export const ContainerBanner = styled.div`
-    .transition{
-        visibility: hidden;
-        opacity: -10;
+  
+    .display-none{
+        display: none;
+        animation:  all 1s  i;         
     }
    
     .banner-content{
@@ -74,6 +84,12 @@ export const ContainerBanner = styled.div`
             background-size: 185%;
             background-position-x: -150px;
         }
+        @media(max-width: 375px){
+            height: 625px;
+            background-size: cover;
+            background-position:center;
+        }
+   
         
         &:after {
             content: "";
@@ -96,194 +112,237 @@ export const ContainerBanner = styled.div`
             width: 35%;
             height: 1.5px;
             z-index: 1;
-        }  
-        
-    }
-   
-    .info-banner{
-        position: absolute;
-        z-index: 96;
-        height: 100%;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        padding: 0 7.8% 0 22.4%; 
-
-        .play-now{
-            .icon{
-                margin-right: -30px;
-                img{
-                    width: 280px;
-                }
-                    
-            }
         } 
         
         
-        @media(min-width: 1920px){
-            padding: 0 18% 0 28%; 
-        }
-
-        @media(max-width: 768px){
-            padding: 0 5% 0 5%; 
-            display: flex;
-            align-items: flex-start;
-            padding-top: 130px;
-        }
-   
-    }
-
-    .title p{
-        font-size: 18px;
-        font-family: 'Poppins';
-        color: #FFFFFF;
-        letter-spacing: -0.005rem;
-        font-weight: 400;
-    }
-
-    .title h1{
-        font-size: 64px;
-        font-family: 'Poppins';
-        color: #FFFFFF;
-        font-weight: 700;
-        width: 562px;
-        line-height: 75px;
-        padding-bottom: 15px;
-    }
-
-    .banner-btn button {
-        padding: 14px 32px;
-        color: #FFFFFF;
-        font-weight: 600;
-        font-size: 16px;
-        background-color:#00aeff;
-        border: none;
-        outline: none;
-        border-radius: 4px;
-        margin-top: 20px;
-        cursor: pointer;
-
-        img{
-            margin-right: 10px;
-        }
-
-        &:hover{
-            background-color: #0089c9; 
-            transition: all 2s ease-out; 
-        }
-    }
-
-
-    .play-now{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content:space-between;
-        height: 68%;
-        margin-top: 65px;
-
-        @media(max-width: 768px){
-            height: 80%;
-            margin-top: -50px;
+        .info-banner{
             position: absolute;
-            right: 5%;
-        }
-     
-        .play{
+            z-index: 96;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            padding: 0 7.8% 0 22.4%; 
 
-            .title-play{
-                color: #FFFFFF;
-                text-align: right;
-                font-size: 13px;
-                font-weight: 600;
-                padding-bottom: 10px;
-                font-family: 'Poppins';
+            @media(min-width: 1920px){
+                padding: 0 18% 0 28%; 
+            }
 
-                @media (max-width: 768px){
+            @media(max-width: 768px){
+                padding: 0 5%; 
+                display: flex;
+                align-items: flex-start;
+                padding-top: 130px;
+            }
+
+            .banner-title{
+
+                .title{
+                    h1{
+                        font-size: 64px;
+                        font-family: 'Poppins';
+                        color: #FFFFFF;
+                        font-weight: 700;
+                        line-height: 75px;
+                        padding-bottom: 15px;
+                    }
+                
+                    @media(max-width: 768px){
+                        h1{
+                            width: 490px;
+                            font-size: 45px;
+                            line-height: 65px;
+                        } 
+                    }
+
+                    @media(max-width: 375px){ 
+                        h1{
+                            width: 100%;
+                            font-size: 35px;
+                            line-height: 50px;
+                        }
+                    }
+
+                }
+                .title p{
+                    font-size: 18px;
+                    font-family: 'Poppins';
+                    color: #FFFFFF;
+                    letter-spacing: -0.005rem;
+                    font-weight: 400;
+                }
+
+                .banner-btn{
+                    button{
+                        padding: 14px 32px;
+                        color: #FFFFFF;
+                        font-weight: 600;
+                        font-size: 16px;
+                        background-color:#00aeff;
+                        border: none;
+                        outline: none;
+                        border-radius: 4px;
+                        margin-top: 20px;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: #0089c9; 
+                            transition: all 2s ease-out; 
+                        }
+                    }
+
+                    img{
+                        margin-right: 10px;
+                    }
+
+                   
+
+                    @media(max-width: 375px){
+                        img{
+                            display: none;
+                        } 
+                    }
+
+                }
+            }
+
+            .play-now{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content:space-between;
+                height: 68%;
+                margin-top: 65px;
+
+                .icon{
+                    margin-right: -30px;
+
+                    img{
+                        width: 280px;
+                    }               
+                }
+
+                @media(max-width: 768px){
+                    height: 80%;
+                    margin-top: -50px;
+                    position: absolute;
+                    right: 5%;
+                }
+
+                @media(max-width: 375px){
                     display: none;
                 }
-            }
+     
+                .play{
 
-            .play-gif{
-                position: relative; 
+                    .title-play{
+                        color: #FFFFFF;
+                        text-align: right;
+                        font-size: 13px;
+                        font-weight: 600;
+                        padding-bottom: 10px;
+                        font-family: 'Poppins';
 
-                img{
-                    width: 280px;
-                    height:158px;
-                    border-radius: 6px;
-                } 
-
-                &:hover{
-                    .button-play{
-                        background-color:  #009ae255;
-                        transform: transition all 1s ease-in-out;
+                        @media (max-width: 768px){
+                            display: none;
+                        }
                     }
 
-                    .icon-play-polygon{           
-                        filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(13deg) brightness(92%) contrast(107%);
-                        transform: transition all 1s ease-in-out;
-                    }
+                    .play-gif{
+                        position: relative; 
 
-                    .icon-play-ellipse{
-                        filter: brightness(0) 
-                        saturate(100%) 
-                        invert(44%) 
-                        sepia(90%) 
-                        saturate(2136%) 
-                        hue-rotate(170deg) 
-                        brightness(94%) 
-                        contrast(101%);
-                        transform: transition all 1s ease-in-out;
-                    }
-                }
+                        img{
+                            width: 280px;
+                            height:158px;
+                            border-radius: 6px;
+                        } 
 
-                .button-play{
-                    position: relative;
-                    position: absolute;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 60px;
-                    width: 60px;
-                    left: 100px;
-                    border-radius: 50%;
-                    top: calc(50% - 25.5px);
-                    z-index: 2;
-                    background-color: transparent;
-                    
-                    .icon-play-polygon{
+                        &:hover{
+                            .button-play{
+                                background-color:  #009ae255;
+                                transform: transition all 1s ease-in-out;
+                            }
+
+                            .icon-play-polygon{           
+                                filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(13deg) brightness(92%) contrast(107%);
+                                transform: transition all 1s ease-in-out;
+                            }
+
+                            .icon-play-ellipse{
+                                filter: brightness(0) 
+                                saturate(100%) 
+                                invert(44%) 
+                                sepia(90%) 
+                                saturate(2136%) 
+                                hue-rotate(170deg) 
+                                brightness(94%) 
+                                contrast(101%);
+                                transform: transition all 1s ease-in-out;
+                            }
+                        }
+
+                        .button-play{
+                            position: relative;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 60px;
+                            width: 60px;
+                            left: 100px;
+                            border-radius: 50%;
+                            top: calc(50% - 25.5px);
+                            z-index: 2;
+                            background-color: transparent;
+                            
+                            .icon-play-polygon{
+                                position: absolute;
+                                z-index: 4;
+                                left: 24px;
+                                top: 22px;
+                                width: 15px;
+                                height: 15px;       
+                            }
+
+                            .icon-play-ellipse{
+                                width: 51px;
+                                height: 51px;
+                                opacity: 0.9;               
+                            }
+                        }
+                    }
+                
+
+                    .img-preview{
                         position: absolute;
-                        z-index: 4;
-                        left: 24px;
-                        top: 22px;
-                        width: 15px;
-                        height: 15px;       
-                    }
+                        top: 0;
+                        transition: all 1s;
 
-                    .icon-play-ellipse{
-                        width: 51px;
-                        height: 51px;
-                        opacity: 0.9;               
+                        img{
+                            width: 100%;
+                        }
+
+                        &:hover{
+                            opacity: 0;
+                        }      
                     }
                 }
-            }
-        
-
-            .img-preview{
-                position: absolute;
-                top: 0;
-                transition: all 1s;
-
-                img{
-                    width: 100%;
-                }
-
-                &:hover{
-                    opacity: 0;
-                }      
             }
         }
     }
+   
+   
+
+   
+
+   
+
+
+
+ 
+
+
+    
 
 `

@@ -25,6 +25,20 @@ export const ContainerLogin = styled.div`
         background-repeat: no-repeat;
         background-size: 100% 101%;
         background-size: 100%;
+
+        @media (min-width: 1920px) {
+            width: 60%;
+            height: 60%;
+        }
+        @media (min-width: 1440px) {
+            width: 65%;
+            height: 60%;
+        }
+        @media (max-width: 768px) {
+            width: 75%;
+            height: 85%;
+        }
+        
     }
 
     .logo-battle{
@@ -49,6 +63,12 @@ export const ContainerLogin = styled.div`
             font-size: 25px;
             font-weight: 600;
         } 
+
+        @media (min-width: 1920px) {
+            button{
+                font-size: 35px;
+            }
+        }
     }
 
     .form{
@@ -95,6 +115,15 @@ export const ContainerLogin = styled.div`
                     }
                 }  
             }
+
+            @media (min-width: 1920px) {
+
+                input, .btn-connect-login button{
+                    width: 550px;
+                    height: 70px;
+                }
+
+            }
         }
 
         .connect-with{
@@ -104,6 +133,12 @@ export const ContainerLogin = styled.div`
                 font-size: 14px;
                 margin-top: 30px;
                 font-family: 'Poppins';
+            }
+
+            @media (min-width: 1920px) {
+                p{
+                    font-size: 20px; 
+                }
             }
             
         }
@@ -130,6 +165,14 @@ export const ContainerLogin = styled.div`
                     height: 22px;
                 }
 
+                @media (min-width: 1920px) {
+                    a{
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                }
+
             }
         }
         .create-account{
@@ -151,6 +194,12 @@ export const ContainerLogin = styled.div`
                     color: #00AEFF;
                     text-decoration: underline;
                     margin-top: 15px;
+                }
+            }
+
+            @media (min-width: 1920px) {
+                p{
+                    font-size: 20px; 
                 }
             }
         }

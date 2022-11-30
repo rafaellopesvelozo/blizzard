@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import BgFooter from '../../assets/ilustrations/background-footer.png'
-
+import BgFooterMobile from '../../assets/ilustrations/bg-mobile-footer.png'
 
 export const ContanerFooter = styled.div`
     position: relative;
@@ -14,11 +14,14 @@ export const ContanerFooter = styled.div`
     @media (min-width: 1920px) {
         padding:0 0 0 18%;
     }
+
     @media (max-width: 768px) {
         padding:0 0 0 5%;
     }
-    
-
+    @media (max-width: 375px) {
+        background-image: url('${BgFooterMobile}');
+        height: 1000px;
+    }
 
     &:after {
             content: "";
@@ -40,9 +43,14 @@ export const ContanerFooter = styled.div`
         position: relative;
         position: absolute;
         z-index: 1;
-        top:  calc(50% - 253px );    ;
+        top:  calc(50% - 253px );
+
+        @media(max-width:375px){
+            margin-top: -140px;
+        }
 
         .download{
+
             .info-download{
                 font-size: 32px;
                 color: #FFFFFF;
@@ -51,7 +59,10 @@ export const ContanerFooter = styled.div`
                 margin-top: 20px;
             }
         }
+     
+
     }
+
 
     .content-icons{
         .info-footer{
@@ -127,6 +138,41 @@ export const ContanerFooter = styled.div`
         span{
             text-decoration: underline;
         }
+
+    }
+
+    .system-download{
+        margin-top: 30px;
+
+        button{
+            background-color: #00AEFF;
+            padding: 14px 32px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+
+            @media (max-width: 768px) {
+                padding: 14px 22px;
+            }
+            
+            &:hover{
+             background-color: #0089c9; 
+             transition: all 2s ease-out;
+           
+            }
+
+            .info-button{
+                .download-for{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                }
+            }
+        }
     }
 
     .mini{
@@ -181,42 +227,31 @@ export const ContanerFooter = styled.div`
             }
         }
 
-
-    }
-
-    .system-download{
-        margin-top: 30px;
-
-        button{
-            background-color: #00AEFF;
-            padding: 14px 32px;
-            border-radius: 4px;
-            cursor: pointer;
-            border: none;
-            outline: none;
-
-            @media (max-width: 768px) {
-                padding: 14px 22px;
-            }
-            
-            &:hover{
-             background-color: #0089c9; 
-             transition: all 2s ease-out;
-           
+        @media (max-width: 375px) {
+            img{
+                :nth-child(1){
+                    top: 560px;
+                    left: 0;
+                    width: 400px;
+                    height: 320px;
+                }
             }
 
-            .info-button{
-                .download-for{
-                    display: flex;
-                    align-items: center;
-                    gap: 15px;
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: #FFFFFF;
+            img{
+                :nth-child(2){
+                    left: 43px;
+                    top: 705px;
+                    height: 320px;
                 }
             }
         }
+
+        
+
+
     }
+
+    
     
 `
 

@@ -11,7 +11,7 @@ export const ContentExclusiveGames = styled.div`
         padding:0 18% 70px 18%;
     }
     @media(max-width: 768px){
-        padding:0 5% 70px 5%;
+        padding:0 5% 12% 5%;
     }
 
     .head-games{
@@ -19,6 +19,10 @@ export const ContentExclusiveGames = styled.div`
         justify-content: space-between;
         align-items:center;
         padding: 50px 0;
+
+        @media(max-width: 375px){
+            align-items: flex-end;
+        }
 
         .info-games{
             display: flex;
@@ -28,7 +32,7 @@ export const ContentExclusiveGames = styled.div`
             @media(max-width: 768px){
                 gap: 80px;
             }
-         
+          
             .games {
                 p{
                     color: #808080;
@@ -44,16 +48,29 @@ export const ContentExclusiveGames = styled.div`
                 }
             }
 
-            .exclusive-title p{
-                color: #FFFFFF;
-                font-size: 32px;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 700;
+            .exclusive-title {
+                p{
+                    color: #FFFFFF;
+                    font-size: 32px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                }
+
+               @media(max-width: 375px){
+                    p{
+                        font-size: 28px;  
+                    }
+                }
             }
+
 
             .icons{
                 display: flex;
                 gap: 20px;
+
+                @media(max-width: 375px){
+                    display: none;
+                }
             }
         }
 
@@ -75,8 +92,19 @@ export const ContentExclusiveGames = styled.div`
                 font-weight: 600;
                 cursor: pointer;
             }
-        }  
+                
+            @media(max-width: 375px){
+                padding-bottom: 10px ;
+                gap: 10px;        
+                p{
+                    font-size: 14px;    
+                }
+            }
+
+        } 
+
     }
+
 
     .exclusive-cards{
         display: flex;
@@ -92,7 +120,7 @@ export const ContentExclusiveGames = styled.div`
 
         @media(max-width: 768px){
             justify-content: flex-start;
-        
+                
         }
 
         .cards{
@@ -103,12 +131,16 @@ export const ContentExclusiveGames = styled.div`
             @media(min-width: 1920px){
                 width: 270px;
             }
-            
+                    
             @media(max-width: 768px){
                 width: 217px;
-        
+                
             }
-
+            @media(max-width: 375px){
+                width: 158px;
+                height: 197px;
+            }
+               
             .card-image{
                 position: relative;
                 display: flex;
@@ -120,19 +152,25 @@ export const ContentExclusiveGames = styled.div`
                 .image{
                     width: 100%;
                     height: 330px;
-                    transition: all .5s ease-in-out; 
-                     
+                    transition: all .5s ease-in-out;
+        
                     &:hover {    
                         transform: scale(1.2);                       
+                    } 
+
+                    @media(max-width: 375px){
+                        height: 100%;
                     }
+                   
                 }
-        
+                
                 .logo {
                     position: absolute;
                     width: 148px;
                     height: 98px;
                     margin-bottom: 25px; 
                 }
+
             }
 
             .name{
@@ -141,66 +179,96 @@ export const ContentExclusiveGames = styled.div`
                 font-family: 'Poppins';
                 margin: 20px 0 0 0;
                 color: #E5E5E5;
+
+                @media(max-width: 375px){
+                    display: none;
+                }      
             }
+
             .name-category{
                 font-size: 14px;
                 font-weight: 400;
                 font-family: 'Poppins';
                 color:#E5E5E5;
                 opacity: 0.8;
-            }
-        }
-    }
 
-    .card-view-all-games{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #FFFFFF;
-        border-radius: 3px;
-        width: 258px;
-        height: 330px;
-
-        @media(max-width: 768px){
-            width: 217px;
-            
-        }
-
-        .img-card-view-all-games{
-            margin-bottom: 20px;
-            img{
-                width: 86px;
+                @media(max-width: 375px){
+                    display: none;
+                }
             }
         }
 
-        .card-view-all-games-grid{
-            display: flex;
+        .card-view-all-games{
+             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 10px;
-         
-            img{
-                width: 10px;
-                height: 10px;
-               
+            justify-content: center;
+            border: 1px solid #212428;
+            border-radius: 3px;
+            width: 258px;
+            height: 330px;
 
-                filter: brightness(0) 
-                saturate(100%) 
-                invert(88%) 
-                sepia(77%) 
-                saturate(6552%) 
-                hue-rotate(182deg) 
-                brightness(118%) 
-                contrast(111%);
+            @media(max-width: 768px){
+                width: 217px;
+                    
             }
 
-            p{
-                color: #f7f7f7;
-                font-size: 16px;
-                font-weight: 600;
-                font-family: 'Poppins';
-                cursor: pointer;          
+            @media(max-width: 375px){
+                 width: 158px;
+                 height: 217px;
             }
+
+            .img-card-view-all-games{
+                margin-bottom: 20px;
+                img{
+                    width: 86px;
+                }
+            }
+
+            .card-view-all-games-grid{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+                img{
+                    width: 10px;
+                    height: 10px;
+                    
+
+                    filter: brightness(0) 
+                    saturate(100%) 
+                    invert(88%) 
+                    sepia(77%) 
+                    saturate(6552%) 
+                    hue-rotate(182deg) 
+                    brightness(118%) 
+                    contrast(111%);
+
+                }
+
+                p{
+                    color: #f7f7f7;
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-family: 'Poppins';
+                    cursor: pointer;          
+                }
+
+                @media(max-width: 375px){
+
+                    img{
+                        display: none;
+                    }
+                    p{
+                        font-size: 14px;
+                    } 
+                        
+                }
+
+            }
+
         }
+
     }
+
 `

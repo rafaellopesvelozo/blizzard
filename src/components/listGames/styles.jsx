@@ -17,10 +17,10 @@ export const contentGames = styled.div`
         gap: 21px;
     }
 
-    @media(max-width: 1920px){
+    @media(min-width: 1920px){
         ul{
-            padding: 7% 15% 2% 15%;
-            height: 540px;
+            padding: 6% 15% 1% 15%;
+            height: 54 0px;
         }
     }
 `
@@ -35,6 +35,10 @@ export const Cards = styled.div`
     border-radius: 10px;
     cursor: pointer;
 
+    @media(min-width: 1920px){
+        padding: 25px 20px; 
+        width: 190px; 
+    }
 
     &:hover{
         background-color:  #000000;
@@ -63,6 +67,10 @@ export const Cards = styled.div`
         font-size: 14px;
         transform: none;
         font-weight: 500;
+
+        @media(min-width: 1920px){
+          font-size: 20px;
+        }
     }
  
 `

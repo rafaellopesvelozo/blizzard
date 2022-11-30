@@ -5,6 +5,7 @@ import ListGames from '../../components/listGames';
 import ListEsports from '../../components/listEsports';
 
 import User from '../../assets/icons/user.png'
+import MenuMobile from '../../assets/icons/menu-mobile.png'
 import logo from "../../assets/logo-blizzard.png"
 import Open from '../../assets/icons/up-arrow.png'
 import Close from '../../assets/icons/down-arrow.png'
@@ -79,7 +80,8 @@ const Menu = () => {
                             Logar
                         </button>
                     </styled.Enter>
-                    <div>
+                    <div onclick={handleOpenLogin} className='menu-mobile'> 
+                        <img src={MenuMobile} alt="icon-menu-mobile" />  
                     </div>
                 </styled.Login>
             </styled.Header>

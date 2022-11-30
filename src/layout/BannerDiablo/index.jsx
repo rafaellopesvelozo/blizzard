@@ -69,7 +69,7 @@ const BannerDiablo = () => {
             </styled.LogoGames>
 
             <styled.ContainerBanner >
-                <div className={`${visibleDiablo ? "banner-content" : "transition"}`} >
+                <div className={`${visibleDiablo ? "banner-content" : "display-none"}`} >
                     <div className='info-banner'>
                         <div className='banner-title'>
                             <div className='title'>
