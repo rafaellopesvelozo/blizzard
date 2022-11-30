@@ -33,14 +33,14 @@ export const LogoGames = styled.div`
             display:flex;
             flex-direction: row;
             position: absolute;
-            top: 570px;
+            top: 580px;
             left: 33px;
             gap: 17px;
         }
         
         @media(max-width: 375px){
             left: 20px;
-            top: 520px;
+            top: 500px;
         }
         
     }
@@ -80,15 +80,23 @@ export const ContainerBanner = styled.div`
         height: 670px;
         filter: saturate(110%);
 
+        @media(min-width: 1440px){
+            height: 730px;
+        }
+
+        @media(min-width: 1920px){
+            height: 730px;
+        }
 
         @media (max-width: 768px) {
+            height: 730px;
             background-position: top;
             background-size: 185%;
             background-position-x: -150px;
         }
 
         @media(max-width: 375px){
-            height: 625px;
+            height: 600px;
             background-size: cover;
             background-position:center;
         }
