@@ -63,8 +63,7 @@ export const LogoGames = styled.div`
 export const ContainerBanner = styled.div`
   
     .display-none{
-        display: none;
-        animation:  all 1s  i;         
+        display: none;       
     }
    
     .banner-content{
