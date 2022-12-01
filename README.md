@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Deploy do projeto: https://battle-net-eta.vercel.app
+  Deploy do projeto: https://blizzard-xi.vercel.app
   <br/>
 </p>
 
