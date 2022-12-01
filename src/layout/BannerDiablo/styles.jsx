@@ -17,18 +17,18 @@ export const LogoGames = styled.div`
             width: 45px;
             height: 45px;
             cursor: pointer; 
-        }  
-        
-        @media(min-width: 1440px){
+        } 
+
+        @media(max-width: 1920px){
+            top: 240px;
+            left: 343px;
+        }
+
+        @media(max-width: 1440px){
             top: 210px;
             left: 110px;
         }
 
-        @media(min-width: 1920px){
-            top: 240px;
-            left: 343px;
-        }
-  
         @media (max-width: 768px) {
             display:flex;
             flex-direction: row;
@@ -80,13 +80,15 @@ export const ContainerBanner = styled.div`
         height: 670px;
         filter: saturate(110%);
 
-        @media(min-width: 1440px){
+        @media(max-width: 1920px){
             height: 730px;
         }
 
-        @media(min-width: 1920px){
+        @media(max-width: 1440px){
             height: 730px;
         }
+
+       
 
         @media (max-width: 768px) {
             height: 730px;
@@ -134,13 +136,13 @@ export const ContainerBanner = styled.div`
             display: flex;
             padding: 0 7.8% 0 22.4%; 
 
-            @media(min-width: 1440px){
-                padding: 0 7.8% 0 21%;
-            }
-
-            @media(min-width: 1920px){
+            @media(max-width: 1920px){
                 padding: 0 18% 0 28%;
                 width: 100%;
+            }
+
+            @media(max-width: 1440px){
+                padding: 0 7.8% 0 21%;
             }
 
             @media(max-width: 768px){
@@ -155,11 +157,8 @@ export const ContainerBanner = styled.div`
                 height: 600px;
             }
 
-         
-
             .banner-title{
-
-                @media(min-width: 1920px){
+                @media(max-width: 1920px){
                     width: 70%;
                 }
 
@@ -181,15 +180,15 @@ export const ContainerBanner = styled.div`
                         padding-bottom: 15px;
                     }
 
-                    @media(min-width: 1440px){ 
+                    @media(max-width: 1920px){
                         h1{
-                            width: 80%;
+                            width: 100%;
                         }
                     }
 
-                    @media(min-width: 1920px){
+                    @media(max-width: 1440px){ 
                         h1{
-                            width: 100%;
+                            width: 80%;
                         }
                     }
 

@@ -7,9 +7,14 @@ export const ContentExclusiveGames = styled.div`
     color: #FFFFFF;
     padding:0 7.8% 70px 7.8%;
 
-    @media(min-width: 1920px){
+    @media(max-width: 1920px){
         padding:0 18% 70px 18%;
     }
+
+    @media (max-width: 1440px) {
+        padding:0 8% 70px 8%;
+    }
+
     @media(max-width: 768px){
         padding:0 5% 12% 5%;
     }

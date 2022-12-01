@@ -12,14 +12,14 @@ export const ContanerFooter = styled.div`
     justify-content: space-between;
 
    
-
-    @media (min-width: 1440px) {
-        background-position:top;
-    }
-
-    @media (min-width: 1920px) {
+    @media (max-width: 1920px) {
         padding:0 0 0 18%;
     }
+
+    @media (max-width: 1440px) {
+        padding:0 0 0 8%;
+        background-position:top;
+    }  
     
     @media (max-width: 768px) {
         background-position:center left;
@@ -211,7 +211,7 @@ export const ContanerFooter = styled.div`
             }
         }
 
-        @media (min-width: 1920px) {
+        @media (max-width: 1920px) {
             img{
                 :nth-child(1){
                     left:500px;
@@ -225,7 +225,7 @@ export const ContanerFooter = styled.div`
             }
         }
 
-        @media(min-width: 1440px){
+        @media(max-width: 1440px){
             img{
                 :nth-child(1){
                     left: 445px;

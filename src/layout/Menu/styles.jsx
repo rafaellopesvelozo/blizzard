@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
-
   position: relative;
+
   hr {
     position: absolute;
     color: #FFFFFF;
@@ -36,16 +36,26 @@ export const Header = styled.div`
     height: 1.5px;
   }
 
-  
-  @media(min-width: 1920px) {
-    padding:0 18%;
+  @media(max-width: 1920px) {
+      padding: 0 18%;
 
     &:after {
       left: 18%;
     }
   }
 
+  @media (max-width: 1440px) {
+    &:after {
+      left: 8%;
+    }
+  }
+
+
+  @media (max-width: 1440px) {
+    padding: 0 8%;
+  }
   
+
   @media (max-width: 768px) {
     padding:0 5%;
 
@@ -55,7 +65,6 @@ export const Header = styled.div`
     }
   }
  
-
 `;
 
 export const ContainerNav = styled.div`
@@ -126,7 +135,7 @@ export const Links = styled.div`
      
     }
 
-    @media(min-width: 1920px){
+    @media(max-width: 1920px){
       font-size: 20px;
     }
   }
@@ -138,7 +147,7 @@ export const Login = styled.div`
   align-items: center;
 
   .menu-mobile{
-    margin-left: 80px;
+    margin-left: 50px;
     display: none;
 
 
@@ -191,7 +200,7 @@ export const crateAccount = styled.div`
       transition: all 2s ease-out;
     }
 
-    @media(min-width: 1920px){
+    @media(max-width: 1920px){
       font-size: 20px;
     } 
   }
@@ -226,7 +235,7 @@ export const Enter = styled.div`
       background-color: #0089c9; 
       transition: all 2s ease-out; 
     }
-    @media(min-width: 1920px){
+    @media(max-width: 1920px){
       font-size: 20px;
     } 
   }

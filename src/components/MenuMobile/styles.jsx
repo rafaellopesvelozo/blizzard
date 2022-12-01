@@ -12,7 +12,9 @@ export const ContentMobile = styled.div`
     .ul{ 
 
         img{
+
             margin-bottom: 50px;
+
             @media(max-width: 768px){
                 width: 30%;
             }
@@ -20,7 +22,8 @@ export const ContentMobile = styled.div`
                 width: 50%;
             }
         }
-        width: 50%;
+
+        width: 60%;
         height: 100%;
         display: flex;
         flex-direction: column;

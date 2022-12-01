@@ -17,7 +17,7 @@ export const Container = styled.div`
         flex-wrap: wrap;
         gap: 20px;
 
-       @media(min-width: 1920px){
+       @media(max-width: 1920px){
             display: flex;
             justify-content: center;
             gap: 70px;
@@ -56,7 +56,7 @@ export const Container = styled.div`
             width: 105px;
             font-family: 'Poppins';
 
-            @media(min-width: 1920px){
+            @media(max-width: 1920px){
              font-size: 20px;
              width: 190px;
             }
