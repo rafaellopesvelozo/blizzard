@@ -154,15 +154,18 @@ export const ContentExclusiveGames = styled.div`
                 overflow: hidden;
                 border-radius: 3px;
 
+                &:hover {  
+                    .image{
+                        transform: scale(1.2); 
+                    }  
+                                             
+                } 
+
                 .image{
                     width: 100%;
                     height: 330px;
                     transition: all .5s ease-in-out;
         
-                    &:hover {    
-                        transform: scale(1.2);                       
-                    } 
-
                     @media(max-width: 375px){
                         height: 100%;
                     }
