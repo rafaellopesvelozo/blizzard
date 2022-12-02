@@ -3,23 +3,25 @@ import styled from 'styled-components'
 export const contentGames = styled.div`
     position: absolute;
     z-index: 998;
+    padding-top: 1.5%;
     width: 100%;
     top: 0;
     left: 0;
     background: linear-gradient(0deg, rgba(2, 2 , 3, 0.99) 0%, rgba(14, 17, 23, 0.99) 90%, rgba(14, 17, 23, 0.9) 100%);
   
     ul{
-        padding: 9% 5% 4% 9%;
+        padding: 6% 5% 4% 9%;
         display: flex;
-        height: 580px;
+        height: 630px;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 21px;
+        align-items: center;
+        gap: 15px;
     }
 
     @media(max-width: 1920px){
         ul{
-            padding: 6% 15% 1% 15%;
+            padding: 6% 12% 1% 12%;
             height: 54 0px;
         }
     }
@@ -30,8 +32,9 @@ export const Cards = styled.div`
     align-items: center;
     gap: 10px;
     width: 150px;
+    height: 150px;
     text-align: center;
-    padding: 35px 30px;
+    padding: 20px 25px;
     border-radius: 10px;
     cursor: pointer;
 
@@ -53,8 +56,8 @@ export const Cards = styled.div`
     }
 
     img{
-        width: 95px;
-        height:65px;
+        width: 90px;
+        height:75px;
         
         &:hover{
             transform: scale(1.2); 
