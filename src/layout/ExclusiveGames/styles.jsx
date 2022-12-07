@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContentExclusiveGames = styled.div`
+export const ContentExclusiveGames = styled.section`
     display: flex;
     flex-direction: column;
     background: #000000;

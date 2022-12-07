@@ -7,8 +7,10 @@ function Home() {
   return (
     <div>
       <Menu />
-      <BannerDiablo />
-      <Exclusive />
+      <main>
+        <BannerDiablo />
+        <Exclusive />
+      </main>
       <Footer />
     </div>
   );

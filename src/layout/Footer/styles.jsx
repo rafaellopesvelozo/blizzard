@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import BgFooter from '../../assets/ilustrations/background-footer.png'
 import BgFooterMobile from '../../assets/ilustrations/bg-mobile-footer.png'
 
-export const ContanerFooter = styled.div`
+export const ContanerFooter = styled.footer`
     position: relative;
     background-image: url('${BgFooter}');
     padding:0 0 0 7.8%;

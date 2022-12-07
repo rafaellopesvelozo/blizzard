@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Content = styled.div`
+export const Content = styled.header`
   position: relative;
 
   hr {
@@ -88,7 +88,7 @@ export const ContainerNav = styled.div`
   }
 `;
 
-export const Links = styled.div`
+export const Links = styled.nav`
   .arrow-down{
     width: 10px;
     height: 10px;
@@ -142,7 +142,7 @@ export const Links = styled.div`
  
 `;
 
-export const Login = styled.div`
+export const Login = styled.nav`
   display: flex;
   align-items: center;
 

@@ -78,7 +78,7 @@ export const Cards = styled.div`
  
 `
 
-export const menuContent = styled.div`
+export const menuContent = styled.section`
     padding: 20px 0;
     color: #FFFFFF;
     display: flex;

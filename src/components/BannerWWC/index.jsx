@@ -14,7 +14,7 @@ const BannerWorldWarCraft = ({visibleWWc}) => {
     }
     return (
         <styled.ContainerBanner>
-            <div className='banner-content'>
+            <section className='banner-content'>
                 <div className='info-banner'>
                     <div className='banner-title'>
                         <div className='title'>
@@ -33,7 +33,7 @@ const BannerWorldWarCraft = ({visibleWWc}) => {
                         <div className='icon'>
                             <img src={IconWWC} alt="world-warcraft" />
                         </div>
-                        <div className='play'>
+                        <section className='play'>
                             <div className='title-play'>
                                 <p>ASSISTA O TRAILLER</p>
                             </div>
@@ -49,11 +49,11 @@ const BannerWorldWarCraft = ({visibleWWc}) => {
                                     <img src={PreviewWWC} alt="world-warcraft" />
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
                 <div id="current-arrow"></div>
-            </div>
+            </section>
             
             <div>
 

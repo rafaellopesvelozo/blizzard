@@ -34,7 +34,7 @@ const Login = ({ isOpen, onRequestClose }) => {
                         <p>ou conectar-se com</p>
                     </div>
 
-                    <div className='connect-icons-login'>
+                    <nav className='connect-icons-login'>
                         <div className='login-icons'>
                             <a href="https://www.google.com.br" target="_blank" rel="noopener noreferrer"><img src={Google} alt="icon-google" /></a>
                         </div>
@@ -45,7 +45,7 @@ const Login = ({ isOpen, onRequestClose }) => {
                         <div className='login-icons'>
                             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"> <img src={Facebook} alt="icon-facebook" /></a>
                         </div>
-                    </div>
+                    </nav>
                     <div className='create-account'>
                         <p><span>Crie uma conta</span> Battle.net de graça</p>
                         <p>Não consegue logar?</p>

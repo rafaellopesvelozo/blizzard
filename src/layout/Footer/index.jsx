@@ -33,7 +33,7 @@ const Footer = () => {
 
     return (
         <styled.ContanerFooter >
-            <div className='info-content'>
+            <section className='info-content'>
                 <div className='download'>
                     <img src={Battle} alt={Battle} />
                     <p className='info-download'>Baixa agora o <br /> battle.net</p>
@@ -87,12 +87,12 @@ const Footer = () => {
                     <img src={Phone} alt={Phone} />
                     <p>  Também disponível como <br /> <span>aplicativo móvel</span></p>
                 </div>
-            </div>
+            </section>
 
-            <div className='mini'>
+            <section className='mini'>
                 <img className='app' src={App} alt={App} />
                 <img className='app-mini' src={AppMini} alt={AppMini} />
-            </div>
+            </section>
 
         </styled.ContanerFooter>
     );

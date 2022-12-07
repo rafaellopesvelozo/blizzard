@@ -14,7 +14,7 @@ const BannerHeartStone = ({visibleHeartStone}) => {
 
     return (
         <styled.ContainerBanner>
-            <div className='banner-content'>
+            <section className='banner-content'>
                 <div className='info-banner'>
                     <div className='banner-title'>
                         <div className='title'>
@@ -32,7 +32,7 @@ const BannerHeartStone = ({visibleHeartStone}) => {
                         <div className='icon'>
                             <img src={IconHeartstone} alt="IconSeartstone" />
                         </div>
-                        <div className='play'>
+                        <section className='play'>
                             <div className='title-play'>
                                 <p>ASSISTA O TRAILLER</p>
                             </div>
@@ -46,11 +46,11 @@ const BannerHeartStone = ({visibleHeartStone}) => {
                                     <img src={HeartstonePreview} alt="HeartstonePreview" />
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
                 <div id="current-arrow"></div>
-            </div>
+            </section>
         </styled.ContainerBanner>
     );
 }

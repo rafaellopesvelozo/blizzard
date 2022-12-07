@@ -69,7 +69,7 @@ const BannerDiablo = () => {
             </styled.LogoGames>
 
             <styled.ContainerBanner >
-                <div className={`${visibleDiablo ? "banner-content" : "display-none"}`} >
+                <section className={`${visibleDiablo ? "banner-content" : "display-none"}`} >
                     <div className='info-banner'>
                         <div className='banner-title'>
                             <div className='title'>
@@ -87,7 +87,7 @@ const BannerDiablo = () => {
                             <div className='icon'>
                                 <img src={IconDiablo} alt={IconDiablo} />
                             </div>
-                            <div className='play'>
+                            <section className='play'>
                                 <div className='title-play'>
                                     <p>ASSISTA O TRAILLER</p>
                                 </div>
@@ -102,11 +102,11 @@ const BannerDiablo = () => {
                                         <img src={DiabloPreview} alt="diablo-preview" />
                                     </div>
                                 </div>
-                            </div>
+                            </section>
                         </div>
                     </div>
                     <div id="current-arrow"></div>
-                </div>
+                </section>
                 <div>
                     <BannerHeartStone visibleHeartStone={visibleHeartStone} />
                 </div>

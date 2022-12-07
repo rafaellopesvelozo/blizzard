@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.nav`
     position: absolute;
     z-index: 998;
     width: 100%;
@@ -21,9 +21,8 @@ export const Container = styled.div`
             display: flex;
             justify-content: center;
             gap: 70px;
-       }
-       
-   }
+        }    
+    }
 
     .section-games{
         display: flex;
