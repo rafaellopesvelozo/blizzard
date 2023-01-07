@@ -10,7 +10,7 @@ const Login = ({ isOpen, onRequestClose }) => {
     }
 
     return (
-        <styled.ContainerLogin>
+        <styled.ContainerLogin onClick={onRequestClose}>
             <div className='content-form'>
                 <div className='btn-close-modal'>
                     <button onClick={onRequestClose}>

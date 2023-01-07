@@ -5,6 +5,7 @@ export const ContainerLogin = styled.div`
     background-color: #00000095;
     position: fixed;
     z-index:999;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;

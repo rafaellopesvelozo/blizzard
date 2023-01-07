@@ -28,7 +28,7 @@ const Menu = () => {
         }
     }
 
-    const handleOpenLogin = () => {
+    const handleOpenLogin = (e) => {
         setLoginOpen(true)
         if (gamesVisible === true || esportsVisible === true) {
             setEsportsVisible(false)
