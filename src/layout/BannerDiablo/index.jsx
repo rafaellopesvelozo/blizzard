@@ -22,7 +22,6 @@ const BannerDiablo = () => {
     const [visibleHeartStone, setvisibleHeartStone] = useState(false)
     const [visibleWWc, setvisibleWWc] = useState(false)
 
-
     const handleDiablo = () => {
         setVisibleDiablo(true)
         if (visibleHeartStone === true) {
@@ -97,8 +96,7 @@ const BannerDiablo = () => {
                                        <img className='icon-play-polygon' src={IconPlayPolygon} alt="icon-play-polygon" />
                                        <img className='icon-play-ellipse' src={IconPlayEllipse} alt="icon-play-ellipse" />
                                     </div>
-                                    <div
-                                        className="img-preview">
+                                    <div className="img-preview">
                                         <img src={DiabloPreview} alt="diablo-preview" />
                                     </div>
                                 </div>

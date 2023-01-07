@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const ContentExclusiveGames = styled.section`
     display: flex;
     flex-direction: column;
+    align-items:center;
     background: #000000;
     color: #FFFFFF;
-    padding:0 7.8% 70px 7.8%;
-
+ 
     @media(max-width: 1920px){
         padding:0 18% 70px 18%;
     }
@@ -20,9 +20,10 @@ export const ContentExclusiveGames = styled.section`
     }
 
     .head-games{
+        width: 100%;
+        max-width: 1228.81px;
         display: flex;
         justify-content: space-between;
-        align-items:center;
         padding: 50px 0;
 
         @media(max-width: 375px){
@@ -112,6 +113,7 @@ export const ContentExclusiveGames = styled.section`
 
     .exclusive-cards{
         width: 100%;
+        max-width: 1228.81px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -119,7 +121,7 @@ export const ContentExclusiveGames = styled.section`
         gap: 16px;
 
                
-        @media(min-width: 1920px){
+        @media(max-width: 1920px){
             display: flex;
             gap: 20px;
         }
@@ -130,18 +132,18 @@ export const ContentExclusiveGames = styled.section`
         }
 
         .cards{
-            width: 16.5rem; 
             margin-bottom: 10px;
+            flex-grow: 1;
 
-            @media(min-width: 1440px){
-                width: 288px; 
+            @media(max-width: 1920px){
+                width: 292px;
+            }
+
+            @media(max-width: 1440px){
+                width: 280px;
+               
             } 
             
-            @media(min-width: 1920px){
-                width: 290px;
-            }
-            
-
             @media(max-width: 768px){
                 width: 217px;  
             }
@@ -222,8 +224,9 @@ export const ContentExclusiveGames = styled.section`
             justify-content: center;
             border: 1px solid #212428;
             border-radius: 3px;
-            width: 258px;
             height: 330px;
+
+        
 
             @media(min-width: 1440px){
                 width: 273px;  

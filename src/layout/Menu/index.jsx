@@ -5,7 +5,6 @@ import ListGames from '../../components/listGames';
 import ListEsports from '../../components/listEsports';
 import MenuMob from '../../components/MenuMobile';
 
-
 import User from '../../assets/icons/user.png'
 import MenuMobile from '../../assets/icons/menu-mobile.png'
 import logo from "../../assets/logo-blizzard.png"
@@ -73,7 +72,6 @@ const Menu = () => {
                                 Esportes
                                 <img className={`${esportsVisible ? "arrow-up" : "arrow-down Arrow-Closed"}`} src={Open} alt="" />
                                 <img className={`${esportsVisible ? "arrow-up Arrow-Closed" : "arrow-down Arrow-Open"}`} src={Close} alt="" />
-
                             </li>
 
                             <li>Loja</li>
@@ -118,7 +116,6 @@ const Menu = () => {
                 />
             </div>
         </styled.Content>
-
     );
 }
 export default Menu;

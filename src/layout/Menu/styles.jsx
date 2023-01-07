@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Content = styled.header`
   position: relative;
+  display: flex;
+  justify-content: center;
+ 
 
   hr {
     position: absolute;
@@ -18,8 +21,8 @@ export const Content = styled.header`
 
 export const Header = styled.div`
   position: absolute;
-  padding:0 7.8%;
   width: 100%;
+  max-width: 1228.81px;
   height: 86px;
   display: flex;
   justify-content: space-between;
@@ -30,31 +33,11 @@ export const Header = styled.div`
     content: "";
     position: absolute;
     bottom: -2px;
-    left: 7.8%;
+    left: 0;
     background-color: #0089c9;
     width: 40px;
     height: 1.5px;
   }
-
-  @media(max-width: 1920px) {
-      padding: 0 18%;
-
-    &:after {
-      left: 18%;
-    }
-  }
-
-  @media (max-width: 1440px) {
-    &:after {
-      left: 8%;
-    }
-  }
-
-
-  @media (max-width: 1440px) {
-    padding: 0 8%;
-  }
-  
 
   @media (max-width: 768px) {
     padding:0 5%;

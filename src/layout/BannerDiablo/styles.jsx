@@ -19,16 +19,21 @@ export const LogoGames = styled.div`
             cursor: pointer; 
         } 
 
-        @media(max-width: 1920px){
-            top: 240px;
+        @media(min-width: 1920px){
+            top: 200px;
             left: 343px;
         }
 
-        @media(max-width: 1440px){
-            top: 210px;
-            left: 110px;
+        @media(max-width: 1920px){
+            top: 200px;
+            left: 343px;
         }
-
+        
+        @media(max-width: 1440px){
+            top: 190px;
+            left: 105px;
+        }
+        
         @media (max-width: 768px) {
             display:flex;
             flex-direction: row;
@@ -41,8 +46,7 @@ export const LogoGames = styled.div`
         @media(max-width: 375px){
             left: 20px;
             top: 500px;
-        }
-        
+        } 
     }
 
     .logo-disabled{
@@ -54,14 +58,12 @@ export const LogoGames = styled.div`
         @media (max-width: 768px) {
             display:flex;
             flex-direction: row;
-            
         }
     } 
 
 `
 
-export const ContainerBanner = styled.div`
-  
+export const ContainerBanner = styled.div`   
     .display-none{
         display: none;       
     }
@@ -69,7 +71,7 @@ export const ContainerBanner = styled.div`
     .banner-content{
         position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         background-image: url('${bgDiablo}');
         background-position: top center;
         background-size:cover;
@@ -78,6 +80,7 @@ export const ContainerBanner = styled.div`
         background-repeat: no-repeat;
         background-size: 117%;
         height: 670px;
+        max-height: 670px;
         filter: saturate(110%);
 
         @media(max-width: 1920px){
@@ -87,9 +90,7 @@ export const ContainerBanner = styled.div`
         @media(max-width: 1440px){
             height: 730px;
         }
-
-       
-
+     
         @media (max-width: 768px) {
             height: 730px;
             background-position: top;
@@ -120,6 +121,7 @@ export const ContainerBanner = styled.div`
             position: absolute;
             height: 10px;
             bottom: 0px;
+            left: 0;
             background-color: #00aeff;
             width: 35%;
             height: 1.5px;
@@ -131,25 +133,19 @@ export const ContainerBanner = styled.div`
             z-index: 96;
             height: 100%;
             width: 100%;
+            max-width: 1228px;
+            display: flex;
             align-items: center;
             justify-content: space-between;
-            display: flex;
-            padding: 0 7.8% 0 22.4%; 
+            padding-left: 190px;
 
-            @media(max-width: 1920px){
-                padding: 0 18% 0 28%;
-                width: 100%;
-            }
-
-            @media(max-width: 1440px){
-                padding: 0 7.8% 0 21%;
-            }
 
             @media(max-width: 768px){
                 padding: 0 5%; 
                 display: flex;
                 align-items: flex-start;
                 padding-top: 190px;
+                margin-left: 0;
             }
 
             @media(max-width: 375px){
@@ -178,6 +174,7 @@ export const ContainerBanner = styled.div`
                         font-weight: 700;
                         line-height: 75px;
                         padding-bottom: 15px;
+                        max-width: 776px;
                     }
 
                     @media(max-width: 1920px){
@@ -188,7 +185,7 @@ export const ContainerBanner = styled.div`
 
                     @media(max-width: 1440px){ 
                         h1{
-                            width: 80%;
+                            width: 88%;
                         }
                     }
 
@@ -326,6 +323,7 @@ export const ContainerBanner = styled.div`
                                 brightness(94%) 
                                 contrast(101%);
                                 transform: transition all 1s ease-in-out;
+
                             }
                         }
 
@@ -342,7 +340,7 @@ export const ContainerBanner = styled.div`
                             top: calc(50% - 25.5px);
                             z-index: 2;
                             background-color: transparent;
-                            
+  
                             .icon-play-polygon{
                                 position: absolute;
                                 z-index: 4;
@@ -355,12 +353,11 @@ export const ContainerBanner = styled.div`
                             .icon-play-ellipse{
                                 width: 51px;
                                 height: 51px;
-                                opacity: 0.9;               
+                                opacity: 0.9;                        
                             }
                         }
                     }
                 
-
                     .img-preview{
                         position: absolute;
                         top: 0;
@@ -379,17 +376,4 @@ export const ContainerBanner = styled.div`
         }
     }
    
-   
-
-   
-
-   
-
-
-
- 
-
-
-    
-
 `

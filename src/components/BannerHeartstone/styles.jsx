@@ -2,21 +2,18 @@ import styled from "styled-components";
 import BgHeartstone from '../../assets/banners/heartstone-bg.png'
 
 export const ContainerBanner = styled.div`
-
+       
     .banner-content{
-        position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         background-image: url(${BgHeartstone});        
         background-position:top right;
         background-repeat: no-repeat;
         background-size: cover;
         height: 670px;
 
-      
-    
         #current-arrow{
-            width: 67%;    
+            width: 67%;     
         }
 
         @media(max-width: 768px){
@@ -36,8 +33,7 @@ export const ContainerBanner = styled.div`
         @media(max-width: 375px){
             background-position:center;
             background-size: 200% 100%;
-            background-position-x: -210px;
-            
+            background-position-x: -210px;    
         }
     }
    
